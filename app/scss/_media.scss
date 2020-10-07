@@ -1,3 +1,32 @@
+@media (max-width: 1580px) {
+    .about {
+        &__img {
+            img {
+                max-width: 380px;
+            }
+        }
+        &__img-back {
+            position: absolute;
+            left: -90px;
+            width: 50%;
+            bottom: -60px;
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    .navigation {
+        &__list {
+            justify-content: center;
+        }
+
+        &__item {
+            padding-right: 30px;
+            margin-right: 15px;
+        }
+    }
+}
+
 @media (max-width: 1024px) {
 
     .navigation {
@@ -19,6 +48,25 @@
 
     .logo {
         width: 90px;
+    }
+
+    .about {
+        &__inner {
+            flex-direction: column;
+        }
+        
+        &__images {
+            margin-bottom: 50px;
+        }
+        
+        &__img {
+            img {
+                max-width: 100%;
+            }
+        }
+        &__img-back {
+            display: none;
+        }
     }
 }
 
@@ -106,12 +154,36 @@
         .custom-select {
             width: 60%;
         }
+
+        &__title {
+            font-size: 36px;
+        }
+    
+        &__text {
+            font-size: 16px;
+        }
     }
 
     .main-screen {
         &::before {
             display: none;
         }
+    }
+    
+    .about {
+        background-image: none;
+        padding: 80px 0;
+
+        &__images {
+            margin-right: 0;
+        }
+
+        &__title {
+            font-size: 36px;
+            line-height: 44px;
+            padding-bottom: 30px;
+        }
+
     }
 }
 

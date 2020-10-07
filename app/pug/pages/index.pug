@@ -4,3 +4,24 @@ block title
     title Главная - АльянсХаус
 
 block content
+    section.about
+        .container
+            .about__inner
+                .about__images
+                    .about__img-back
+                        picture
+                            source(srcset="images/main/about-1-back.webp", type="image/webp")
+                            img(src="images/main/about-1-back.jpg", alt="О нашем агенстве")
+                    .about__img
+                        picture
+                            source(srcset="images/main/about-1.webp", type="image/webp")
+                            img(src="images/main/about-1.jpg", alt="О нашем агенстве", width="480")
+                .about__content
+                    h2.about__title.title О нашем агенстве
+                    .about__text
+                        p Аренда недвижимости: жилая, загородная, коммерческая, Другие услуги: дизайн интерьера, консультации, нотариат, ремонт, страхование, строительство, управление объектами, Ипотечное кредитование: ипотека, рефинансирование, Продажа недвижимости: жилая, загородная, коммерческая
+                    a.about__btn(href="#") О компании
+    section.why
+        .container
+            .why__inner
+                

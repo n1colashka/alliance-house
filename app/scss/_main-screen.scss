@@ -244,6 +244,11 @@
         border: none;
         cursor: pointer;
         color: #ffffff;
+        transition: .3s ease;
+
+        &:hover {
+            box-shadow: 0.743px 0.669px 18px 2px rgba(116, 116, 116, 0.58);
+        }
     }
 }
 
