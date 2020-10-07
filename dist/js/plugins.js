@@ -52,6 +52,8 @@ for (i = 0; i < l; i++) {
         closeAllSelect(this);
         this.nextSibling.classList.toggle("select-hide");
         this.classList.toggle("select-arrow-active");
+        $('.main-slider__form-area').removeClass('active');
+        $('.main-slider__form-price').removeClass('active');
     });
 }
 
