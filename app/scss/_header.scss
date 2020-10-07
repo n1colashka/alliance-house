@@ -1,22 +1,20 @@
 .header {
 
-    &__inner {
-    }
+    background: url('../images/header-bg.png') center / cover no-repeat;
 
     &__top {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
         padding: 20px 0;
-    }
-
-    &__logo {
     }
 
     &__link {
         background: url('../images/icons/phone.png') center left no-repeat;
         display: inline-block;
         padding-left: 35px;
+        margin-left: 60px;
     }
 
     &__btn {
@@ -25,6 +23,8 @@
         line-height: 21px;
         padding: 15px 50px;
         border: 2px solid $accent;
+        margin-left: 10px;
+        text-align: center;
         transition: .3s ease;
 
         &:hover {
@@ -32,20 +32,18 @@
             color: #ffffff;
         }
     }
-
-    &__navigation {
-    }
 }
 
 .navigation {
 
-    padding: 15px 0;
+    padding-top: 15px;
     border-top: 1px solid #505770;
     border-bottom: 1px solid #505770;
 
     &__link {
         display: inline-block;
         transition: .3s ease;
+        padding: 10px 0;
         
         &:hover {
             color:$accent;
@@ -56,14 +54,17 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
         text-transform: uppercase;
         font-size: 16px;
+        padding: 15px;
     }
 
     &__item {
         position: relative;
         padding-right: 30px;
         margin-right: 15px;
+        margin-bottom: 15px;
 
         &:first-child {
             margin-left: 0;
@@ -77,6 +78,64 @@
             right: 0;
             top: 50%;
             transform: translateY(-50%);
+        }
+
+        &:last-child {
+            &::before {
+                display: none;
+            }
+        }
+    }
+}
+
+.menu-btn {
+    display: none;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+
+    span {
+        display: block;
+        width: 24px;
+        height: 3px;
+        background-color: $accent; 
+        border-radius: 2px;
+        transition: .3s ease;
+    }
+
+    &::before,
+    &::after {
+        display: block;
+        content: "";
+        width: 24px;
+        height: 3px;
+        background-color: $accent;
+        border-radius: 2px;
+        transition: .3s ease;
+    }
+        
+    &::before {
+        margin-bottom: 3px;
+    }
+
+    &::after {
+        margin-top: 3px;
+    }
+
+    &.active {
+        span {
+            background-color: transparent;
+        }
+
+        &::before {
+            transform: rotate(-45deg);
+            margin-bottom: -3px;
+        }
+
+        &::after {
+            transform: rotate(45deg);
+            margin-top: -3px;
         }
     }
 }
