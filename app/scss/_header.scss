@@ -1,0 +1,82 @@
+.header {
+
+    &__inner {
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    &__logo {
+    }
+
+    &__link {
+        background: url('../images/icons/phone.png') center left no-repeat;
+        display: inline-block;
+        padding-left: 35px;
+    }
+
+    &__btn {
+        display: inline-block;
+        font-size: 16px;
+        line-height: 21px;
+        padding: 15px 50px;
+        border: 2px solid $accent;
+        transition: .3s ease;
+
+        &:hover {
+            background-color: $accent;
+            color: #ffffff;
+        }
+    }
+
+    &__navigation {
+    }
+}
+
+.navigation {
+
+    padding: 15px 0;
+    border-top: 1px solid #505770;
+    border-bottom: 1px solid #505770;
+
+    &__link {
+        display: inline-block;
+        transition: .3s ease;
+        
+        &:hover {
+            color:$accent;
+        }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        font-size: 16px;
+    }
+
+    &__item {
+        position: relative;
+        padding-right: 30px;
+        margin-right: 15px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+        &::before {
+            position: absolute;
+            content: "";
+            width: 12px;
+            height: 3px;
+            background-color: $accent;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}

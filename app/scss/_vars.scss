@@ -1,0 +1,61 @@
+$accent: #e18b00;
+$primary: #01011f;
+
+@mixin font($name) {
+
+    @if $name == 'oswald' {
+        font-family: 'Oswald-Regular', Arial, Helvetica, sans-serif;
+        font-weight: 400;
+    }
+
+    @if $name == 'oswald-medium' {
+        font-family: 'Oswald-Medium', Arial, Helvetica, sans-serif;
+        font-weight: 500;
+    }
+
+    @if $name == 'oswald-light' {
+        font-family: 'Oswald-Light', Arial, Helvetica, sans-serif;
+        font-weight: 300;
+    }
+
+    @if $name == 'oswald-semibold' {
+        font-family: 'Oswald-Semibold', Arial, Helvetica, sans-serif;
+        font-weight: 600;
+    }
+
+    @if $name == 'sf-thin' {
+        font-family: 'SFUIDisplay-Thin', Arial, Helvetica, sans-serif;
+        font-weight: 200;
+    }
+
+    @if $name == 'sf-light' {
+        font-family: 'SFUIDisplay-Light', Arial, Helvetica, sans-serif;
+        font-weight: 300;
+    }
+
+    @if $name == 'sf' {
+        font-family: 'SFUIDisplay-Regular', Arial, Helvetica, sans-serif;
+        font-weight: 400;
+    }
+
+    @if $name == 'sf-medium' {
+        font-family: 'SFUIDisplay-Medium', Arial, Helvetica, sans-serif;
+        font-weight: 500;
+    }
+
+    @if $name == 'sf-semibold' {
+        font-family: 'SFUIDisplay-Semibold', Arial, Helvetica, sans-serif;
+        font-weight: 600;
+    }
+
+    @if $name == 'sf-bold' {
+        font-family: 'SFUIDisplay-Bold', Arial, Helvetica, sans-serif;
+        font-weight: 700;
+    }
+
+    @if $name == 'ms' {
+        font-family: 'Montserrat-Regular', Arial, Helvetica, sans-serif;
+        font-weight: 400;
+    }
+
+}  
