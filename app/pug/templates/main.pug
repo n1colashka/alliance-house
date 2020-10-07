@@ -15,6 +15,21 @@ html(lang="ru")
         .main-screen
             block header
                 include ../includes/header
+            section.main-slider
+                h1.main-slider__title Подберём идеальную для вас недвижимость
+                .main-slider__text
+                    p Агентство Недвижимости "Альянс Хаус" предлагает полный спектр     услуг по вопросам недвижимости!
+                form(action="").main-slider__form
+                    .main-slider__form-item.main-slider__form-property.custom-select
+                        select(name="searchProperty")
+                            option(value="1") Жилая недвижимость
+                            option(value="2") Загородная недвижимость
+                            option(value="3") Коммерческая недвижимость
+                            option(value="4") Элитная недвижимость
+                            option(value="4") Квартиры в новостройках
+                    .main-slider__form-item.main-slider__form-area
+                    .main-slider__form-item.main-slider__form-price
+
         block content
         block footer
             include ../includes/footer
