@@ -1,0 +1,73 @@
+.why {
+    position: relative;
+    background: 
+        url('../images/main/why-1.jpg') bottom right no-repeat,
+        url('../images/main/why-bg.jpg') center / cover no-repeat;
+    padding-top: 130px;
+    padding-bottom: 110px;
+    
+    &__item {
+        max-width: 280px;
+        margin-bottom: 30px;
+        transition: .3s ease;
+
+        &:hover {
+            .why__box {
+                opacity: 1;
+                overflow: visible;
+                z-index: 99;
+            }
+        }
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        @include font('oswald-medium');
+        font-size: 28px;
+
+        &:hover {
+            color: $accent;
+        }
+        
+        img {
+            margin-right: 10px;
+        }
+    }
+
+    &__box {
+        position: absolute;
+        background-color: #ffffff;
+        box-shadow: 0px 7px 15.52px 0.48px rgba(0, 0, 0, 0.16);
+        left: 140px;
+        right: 0;
+        bottom: -40px;
+        width: 460px;
+        height: 500px;
+        margin: 0 auto;
+        padding: 70px;
+        opacity: 0;
+        overflow: hidden;
+        transition: .3s ease;
+        z-index: -1;
+    }
+
+    &__box-title {
+        @include font('oswald-medium');
+        font-size: 32px;
+        margin-bottom: 25px;
+        color: #000000;
+    }
+
+    &__box-img {
+        margin-bottom: 25px;
+    }
+
+    &__box-text {
+        @include font('ms');
+        font-size: 16px;
+        line-height: 26px;
+        color: #262c32;
+    }
+}
+
