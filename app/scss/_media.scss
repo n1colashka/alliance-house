@@ -40,7 +40,10 @@
             &::before {
                 display: none;
             }
+        }
 
+        &__link {
+            display: block;
         }
     }
 

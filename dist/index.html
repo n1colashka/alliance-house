@@ -51,26 +51,69 @@
       </div>
     </header>
     <section class="main-slider">
-      <h1 class="main-slider__title">Подберём идеальную для вас недвижимость</h1>
-      <div class="main-slider__text">
-        <p>Агентство Недвижимости "Альянс Хаус" предлагает полный спектр услуг по вопросам недвижимости!</p>
-      </div>
-      <form class="main-slider__form" action="">
-        <div class="main-slider__form-item main-slider__form-property custom-select">
-          <select name="searchProperty">
-            <option value="1">Жилая недвижимость</option>
-            <option value="2">Загородная недвижимость</option>
-            <option value="3">Коммерческая недвижимость</option>
-            <option value="4">Элитная недвижимость</option>
-            <option value="4">Квартиры в новостройках</option>
-          </select>
+      <div class="container">
+        <div class="main-slider__inner">
+          <h1 class="main-slider__title">Подберём идеальную для вас недвижимость</h1>
+          <div class="main-slider__text">
+            <p>Агентство Недвижимости "Альянс Хаус" предлагает полный спектр услуг по вопросам недвижимости!</p>
+          </div>
+          <form class="main-slider__form" action="">
+            <div class="main-slider__form-item main-slider__form-property custom-select">
+              <select name="searchProperty">
+                <option value="1">Жилая недвижимость</option>
+                <option value="2">Загородная недвижимость</option>
+                <option value="3">Коммерческая недвижимость</option>
+                <option value="4">Элитная недвижимость</option>
+                <option value="4">Квартиры в новостройках</option>
+              </select>
+            </div>
+            <div class="main-slider__form-item main-slider__form-area"><span class="main-slider__form-area-btn">Регион, город</span>
+              <div class="main-slider__form-area-menu">
+                <div class="main-slider__form-inner">
+                  <label class="checkbox-container">Все
+                    <input type="checkbox" name="" checked="checked" /><span class="checkmark"></span>
+                  </label>
+                  <label class="checkbox-container">Вторичное жильё
+                    <input type="checkbox" /><span class="checkmark"></span>
+                  </label>
+                  <label class="checkbox-container">Комнаты
+                    <input type="checkbox" /><span class="checkmark"></span>
+                  </label>
+                  <label class="checkbox-container">1-комнатные квартиры
+                    <input type="checkbox" /><span class="checkmark"></span>
+                  </label>
+                  <label class="checkbox-container">2-комнатные квартиры
+                    <input type="checkbox" /><span class="checkmark"></span>
+                  </label>
+                  <label class="checkbox-container">3-комнатные квартиры
+                    <input type="checkbox" /><span class="checkmark"></span>
+                  </label>
+                  <label class="checkbox-container">4-комнатные квартиры
+                    <input type="checkbox" /><span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="main-slider__form-item main-slider__form-price"><span class="main-slider__form-price-btn">Цена</span>
+              <div class="main-slider__form-price-menu">
+                <div class="main-slider__form-price-input">
+                  <input type="number" placeholder="от" name="searchPriceFrom" />
+                </div>
+                <div class="main-slider__form-price-input">
+                  <input type="number" placeholder="до" name="searchPriceTo" />
+                </div>
+              </div>
+            </div>
+            <div class="main-slider__form-item">
+              <button class="main-slider__form-btn" type="submit">Найти</button>
+            </div>
+          </form>
         </div>
-        <div class="main-slider__form-item main-slider__form-area"></div>
-        <div class="main-slider__form-item main-slider__form-price"></div>
-      </form>
+      </div>
     </section>
   </div>
   <script src="js/libs.js"></script>
+  <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 </body>
 
