@@ -287,6 +287,15 @@
         &__title {
             font-size: 36px;
         }
+
+        &__inner {
+            text-align: center;
+        }
+
+        &__slider-link {
+            position: static;
+            margin-top: 50px;
+        }
     }
 
     // Swiper
