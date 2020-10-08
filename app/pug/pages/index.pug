@@ -150,9 +150,9 @@ block content
                     .swiper-pagination
                 a(href="#").works__link.works__slider-link Смотреть все
             .works__reviews.reviews
-                .reviews__slider
-                    .reviews__slider-wrapper
-                        .reviews__item
+                .reviews__slider.swiper-container
+                    .reviews__slider-wrapper.swiper-wrapper
+                        .reviews__item.swiper-slide
                             img(src="images/works/reviews-1.jpg", alt="Недвижимость").reviews__img
                             .reviews__item-content
                                 .reviews__head
@@ -166,6 +166,9 @@ block content
                     h4.reviews__title.title.title--white Отзывы о нас
                     .reviews__text
                         p Читайте отзывы наших клиентов, чтобы удостровериться в нашем профессионализме.
-                    .reviews__nav
-                    a(href="#").works__link.reviews__link Смотреть все
+                    .reviews__foot
+                        .reviews__nav
+                            button.slider-prev
+                            button.slider-next
+                        a(href="#").works__link.reviews__link Смотреть все
                     

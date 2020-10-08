@@ -41,6 +41,22 @@
             order: -1;
         }
     }
+
+    .works {
+        &__reviews {
+            margin-top: 60px;
+        }
+    }
+
+    .reviews {
+        flex-wrap: wrap;
+
+        &__info {
+            margin-left: 0;
+            margin-bottom: 50px;
+            order: -1;
+        }
+    }
 }
 
 @media (max-width: 1024px) {
@@ -296,28 +312,71 @@
             position: static;
             margin-top: 50px;
         }
+
+        &__link {
+            font-size: 16px;
+            line-height: 18px;
+        }
+    }
+
+    .reviews {
+        &__img {
+            display: none;
+        }
+
+        &__slider {
+            height: auto;
+            width: auto;
+            max-width: 600px;
+            flex-shrink: 1;
+        }
+
+        &__item {
+            flex-grow: 0;
+            // flex-shrink: 1;
+        }
+
+        &__item-content {
+            padding: 20px;
+        }
+
+        &__name {
+            font-size: 16px;
+        }
+
+        &__foot {
+            flex-direction: column;
+        }
+
+        &__link {
+            order: -1;
+            margin-bottom: 50px;
+        }
+
+        &__nav {
+            margin-right: 0;
+        }
     }
 
     // Swiper
 
-.swiper-pagination {
-    display: block;
+    .swiper-pagination {
+        display: block;
 
-    .swiper-pagination-bullet {
-        width: 14px;
-        height: 14px;
-        background-color: #ffffff;
-        opacity: 1;
-        transition: .3s ease;
+        .swiper-pagination-bullet {
+            width: 14px;
+            height: 14px;
+            background-color: #ffffff;
+            opacity: 1;
+            transition: .3s ease;
 
-        &.swiper-pagination-bullet-active {
-            transform: scale(1);
-            width: 24px;
-            height: 24px;
-            background-color: $accent;
+            &.swiper-pagination-bullet-active {
+                transform: scale(1);
+                width: 24px;
+                height: 24px;
+                background-color: $accent;
+            }
         }
-    }
-    
     }
 }
 

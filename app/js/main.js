@@ -25,7 +25,7 @@ $(function() {
         }
     });
 
-    var mySwiper = new Swiper('.works__slider', {
+    var worksSlider = new Swiper('.works__slider', {
         // Optional parameters
         loop: true,
         // If we need pagination
@@ -48,6 +48,7 @@ $(function() {
                     clickable: true,
                     dynamicBullets: true,
                 },
+                initialSlide: 3
             },
             // when window width is >= 769
             769: {
@@ -59,8 +60,21 @@ $(function() {
                     clickable: true,
                     dynamicBullets: false,
                 },
+                initialSlide: 0
             }
         }
     });
 
+    var reviewsSlider = new Swiper('.reviews__slider', {
+        // Optional parameters
+        loop: true,
+        // If we need pagination
+        navigation: {
+            nextEl: '.slider-next',
+            prevEl: '.slider-prev',
+        },
+
+    });
+
+    
 });
