@@ -25,4 +25,42 @@ $(function() {
         }
     });
 
+    var mySwiper = new Swiper('.works__slider', {
+        // Optional parameters
+        loop: true,
+        // If we need pagination
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            dynamicBullets: false,
+        },
+
+        breakpoints: {
+            // when window width is >= 320px
+            300: {
+                slidesPerView: 1,
+                slidesPerGroup: 1,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                    dynamicBullets: true,
+                },
+            },
+            // when window width is >= 769
+            769: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                slidesPerGroup: 3,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                    dynamicBullets: false,
+                },
+            }
+        }
+    });
+
 });

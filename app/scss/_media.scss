@@ -17,8 +17,8 @@
 @media (max-width: 1366px) {
     .why {
         background: 
-            url('../images/main/why-1.jpg') bottom right / 50% no-repeat,
-            url('../images/main/why-bg.jpg') center / cover no-repeat;
+            url('../images/why/why-1.jpg') bottom right / 50% no-repeat,
+            url('../images/why/why-bg.jpg') center / cover no-repeat;
     }
 }
 
@@ -88,7 +88,7 @@
 
 @media (max-width: 920px) {
     .why {
-        background: url('../images/main/why-bg.jpg') center / cover no-repeat;
+        background: url('../images/why/why-bg.jpg') center / cover no-repeat;
         &__box {
             position: static;
             max-width: 400px;
@@ -112,6 +112,12 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+        }
+    }
+
+    .works {
+        &__slider {
+            height: 360px;
         }
     }
 }
@@ -265,6 +271,44 @@
             align-items: center;
             padding: 10px;
         }
+    }
+
+    .works {
+        padding: 70px 0;
+        &__slider {
+            height: 440px;
+        }
+
+        &__item {
+            display: flex;
+            justify-content: center;
+        }
+
+        &__title {
+            font-size: 36px;
+        }
+    }
+
+    // Swiper
+
+.swiper-pagination {
+    display: block;
+
+    .swiper-pagination-bullet {
+        width: 14px;
+        height: 14px;
+        background-color: #ffffff;
+        opacity: 1;
+        transition: .3s ease;
+
+        &.swiper-pagination-bullet-active {
+            transform: scale(1);
+            width: 24px;
+            height: 24px;
+            background-color: $accent;
+        }
+    }
+    
     }
 }
 

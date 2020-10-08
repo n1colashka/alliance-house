@@ -9,6 +9,7 @@ const cleanCSS = require('gulp-clean-css');
             // Insert libs src here:
             'node_modules/normalize.css/normalize.css',
             'node_modules/swiper/swiper-bundle.min.css',
+            'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css',
         ])
             .pipe(concat('libs.css'))
             .pipe(cleanCSS({

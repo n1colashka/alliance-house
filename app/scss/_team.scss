@@ -1,9 +1,6 @@
 .team {
-    background: url('../images/main/team-bg.png') center / cover no-repeat;
+    background: url('../images/team/team-bg.png') center / cover no-repeat;
     padding: 140px 0;
-
-    &__inner {
-    }
 
     &__title {
         @include font('oswald-semibold');

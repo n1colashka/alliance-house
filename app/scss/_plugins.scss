@@ -148,3 +148,30 @@
     width: 8px;
     height: 6px;
 }
+
+
+// Swiper
+
+.swiper-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .swiper-pagination-bullet {
+        width: 14px;
+        height: 14px;
+        background-color: #ffffff;
+        opacity: 1;
+        transform: scale(1);
+        transition: .3s ease;
+
+        &.swiper-pagination-bullet-active {
+            transform: scale(1.5);
+            background-color: $accent;
+        }
+    }
+    
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0px 12px;
+}
