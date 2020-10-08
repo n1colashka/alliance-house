@@ -171,4 +171,30 @@ block content
                             button.slider-prev
                             button.slider-next
                         a(href="#").works__link.reviews__link Смотреть все
-                    
+    section.contacts
+        .contacts__map
+            iframe(src="https://snazzymaps.com/embed/266328" width="985" height="680" style="border:none;")
+            .contacts__map-box
+                .contacts__map-item
+                    .contacts__map-title Адрес:
+                    .contacts__map-subtitle г. Казань, ул. Закиева, д.4, оф.5
+                .contacts__map-item
+                    .contacts__map-title Контактные телефоны:
+                    a(href="tel:8 (843) 248 43-15").contacts__map-subtitle 8 (843) 248 43-15
+                    a(href="tel:8 (843) 225 15-14").contacts__map-subtitle 8 (843) 225 15-14
+                .contacts__map-item
+                    .contacts__map-title E-mail:
+                    a(href="malto:alliance-house@yandex.ru").contacts__map-subtitle alliance-house@yandex.ru
+        .contacts__content
+            h4.contacts__title Контакты
+            .contacts__form
+                form(action="#")
+                    input(type="text" placeholder="Ваше имя*").contacts__input
+                    input(type="text" placeholder="Ваш телефон*").contacts__input
+                    textarea(placeholder="Сообщение").contacts__input
+                    label.contacts__checkbox.checkbox-container
+                        input(type="checkbox", name="contactsCheckbox") 
+                        | Оставляя заявку, я соглашаюсь с 
+                        span.contacts__checkbox-under-text правилами конфиденциальности
+                        span.checkmark
+                    button(type="submit").contacts__btn.btn Оставить заявку
