@@ -1,0 +1,18 @@
+.modal#request-modal
+    .modal__content
+        .modal__info
+            .modal__title Оставить заявку
+            .modal__subtitle Мы перезвоним вам и согласуем дату и время
+            form.modal__form(action="#")
+                .modal__input
+                    input(type="text" autocomplete="off" autofocus required)
+                    span.modal__input-label Ваше имя
+                .modal__input
+                    input(type="number" autocomplete="off" required)
+                    span.modal__input-label Номер телефона
+                label.modal__checkbox.checkbox-container
+                    input(type="checkbox", name="modalCheckbox") 
+                    | Я принимаю условия публичного договора оферты и даю согласиена обработку моих персональных данных.
+                    span.checkmark
+                button.modal__btn Заказать звонок
+        img(src="images/modal-1.jpg", alt="Оставить заявку").modal__img

@@ -25,7 +25,10 @@
         border: 2px solid $accent;
         margin-left: 10px;
         text-align: center;
+        background-color: transparent;
+        color: #ffffff;
         transition: .3s ease;
+        cursor: pointer;
 
         &:hover {
             background-color: $accent;

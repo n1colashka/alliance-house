@@ -20,7 +20,8 @@
             <img src="images/logo-white.png" alt="Альянс хаус - агенство недвижимости" width="140" />
           </a>
           <div class="header__links"><a class="header__link" href="tel:8(931)501-02-20">8 (931) 501-02-20</a><a class="header__link" href="tel:8(931)501-02-20">8 (931) 501-02-20</a>
-          </div><a class="header__btn" href="#">Заказать звонок</a>
+          </div>
+          <button class="header__btn modal-open-btn" data-src="#request-modal" data-fancybox="data-fancybox">Заказать звонок</button>
         </div>
       </div>
       <nav class="header__navigation navigation">
@@ -575,8 +576,26 @@
       </div>
     </div>
   </section>
-  <div class="modal">
-    <div class="modal__content"></div>
+  <div class="modal" id="request-modal">
+    <div class="modal__content">
+      <div class="modal__info">
+        <div class="modal__title">Оставить заявку</div>
+        <div class="modal__subtitle">Мы перезвоним вам и согласуем дату и время</div>
+        <form class="modal__form" action="#">
+          <div class="modal__input">
+            <input type="text" autocomplete="off" autofocus="autofocus" required="required" /><span class="modal__input-label">Ваше имя</span>
+          </div>
+          <div class="modal__input">
+            <input type="number" autocomplete="off" required="required" /><span class="modal__input-label">Номер телефона</span>
+          </div>
+          <label class="modal__checkbox checkbox-container">
+            <input type="checkbox" name="modalCheckbox" />Я принимаю условия публичного договора оферты и даю согласиена обработку моих персональных данных.<span class="checkmark"></span>
+          </label>
+          <button class="modal__btn">Заказать звонок</button>
+        </form>
+      </div>
+      <img class="modal__img" src="images/modal-1.jpg" alt="Оставить заявку" />
+    </div>
   </div>
   <footer class="footer">
     <nav class="footer__navigation footer-navigation">

@@ -148,6 +148,12 @@
             margin-bottom: 20px;
         }
     }
+
+    .modal {
+        &__img {
+            display: none;
+        }
+    }
 }
 
 @media (max-width: 920px) {

@@ -259,9 +259,11 @@
         transform: translateY(-50%);
         top: 43%;
         left: auto;
-        right: -30%;
+        right: 19.2%;
         @include font('oswald');
         font-size: 26px;
+        width: auto;
+        height: auto;
     }
 
     .swiper-pagination-total {

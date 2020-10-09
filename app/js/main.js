@@ -79,10 +79,6 @@ $(function() {
     var mainSlider = new Swiper('.main-slider__inner', {
         effect: 'fade',
         crossFade: true,
-        autoplay: {
-            delay: 0,
-            disableOnInteraction: false,
-        },
         pagination: {
             el: '.swiper-pagination',
             type: 'fraction',
@@ -105,23 +101,8 @@ $(function() {
                 },
         },
 
-        breakpoints: {
-            // when window width is >= 320px
-            300: {
-                autoplay: {
-                    delay: 2500,
-                    disableOnInteraction: false,
-                },
-            },
-            // when window width is >= 769
-            769: {
-                autoplay: false
-            }
-        }
 
     });
-
-    var scrollBarStep = 0; 
     
     mainSlider.on('slideNextTransitionStart', function () {
         scrollBarStep += 20;
@@ -146,5 +127,6 @@ $(function() {
             $('.swiper-pagination-current').css('font-size', '26px');
         }
     });
+
     
 });
