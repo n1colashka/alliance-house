@@ -8,11 +8,18 @@
 @import "main-screen";
 @import "header";
 
+// Main page
 @import "about";
 @import "why";
 @import "team";
 @import "works";
 @import "contacts";
+
+// Дополнительные страницы
+@import "promotions";
+@import "reviews";
+@import "questions";
+
 
 @import "footer";
 

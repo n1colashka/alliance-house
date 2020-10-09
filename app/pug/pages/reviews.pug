@@ -1,0 +1,93 @@
+extends ../templates/page.pug
+
+block title
+    title Отзывы - Альянс Хаус
+
+block content
+    .container
+        .breadcrumbs
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a(href="index.html").breadcrumbs__link Главная
+                li.breadcrumbs__item
+                    a(href="reviews.html").breadcrumbs__link / Отзывы
+    section.reviews-page
+        .container
+            .reviews-page__content
+                .reviews__item
+                    img(src="images/works/reviews-1.jpg", alt="Недвижимость").reviews__img
+                    .reviews__item-content
+                        .reviews__head
+                            img(src="images/works/reviews-avatar-1.jpg", alt="Ирина Потапова").reviews__avatar
+                            .reviews__head-content
+                                .reviews__name Ирина Потапова
+                                time(datetime="24.06.2012").reviews__date 24.06.2012
+                        .reviews__comment
+                            p Аренда недвижимости: жилая, загородная, коммерческая, Другие услуги: дизайн интерьера, консультации, нотариат, ремонт, страхование, строительство, управление.
+                .reviews__item
+                    img(src="images/works/reviews-1.jpg", alt="Недвижимость").reviews__img
+                    .reviews__item-content
+                        .reviews__head
+                            img(src="images/works/reviews-avatar-1.jpg", alt="Ирина Потапова").reviews__avatar
+                            .reviews__head-content
+                                .reviews__name Ирина Потапова
+                                time(datetime="24.06.2012").reviews__date 24.06.2012
+                        .reviews__comment
+                            p Аренда недвижимости: жилая, загородная, коммерческая, Другие услуги: дизайн интерьера, консультации, нотариат, ремонт, страхование, строительство, управление.
+                .reviews__item
+                    img(src="images/works/reviews-1.jpg", alt="Недвижимость").reviews__img
+                    .reviews__item-content
+                        .reviews__head
+                            img(src="images/works/reviews-avatar-1.jpg", alt="Ирина Потапова").reviews__avatar
+                            .reviews__head-content
+                                .reviews__name Ирина Потапова
+                                time(datetime="24.06.2012").reviews__date 24.06.2012
+                        .reviews__comment
+                            p Аренда недвижимости: жилая, загородная, коммерческая, Другие услуги: дизайн интерьера, консультации, нотариат, ремонт, страхование, строительство, управление.
+                .reviews__item
+                    img(src="images/works/reviews-1.jpg", alt="Недвижимость").reviews__img
+                    .reviews__item-content
+                        .reviews__head
+                            img(src="images/works/reviews-avatar-1.jpg", alt="Ирина Потапова").reviews__avatar
+                            .reviews__head-content
+                                .reviews__name Ирина Потапова
+                                time(datetime="24.06.2012").reviews__date 24.06.2012
+                        .reviews__comment
+                            p Аренда недвижимости: жилая, загородная, коммерческая, Другие услуги: дизайн интерьера, консультации, нотариат, ремонт, страхование, строительство, управление.
+                .reviews__item
+                    img(src="images/works/reviews-1.jpg", alt="Недвижимость").reviews__img
+                    .reviews__item-content
+                        .reviews__head
+                            img(src="images/works/reviews-avatar-1.jpg", alt="Ирина Потапова").reviews__avatar
+                            .reviews__head-content
+                                .reviews__name Ирина Потапова
+                                time(datetime="24.06.2012").reviews__date 24.06.2012
+                        .reviews__comment
+                            p Аренда недвижимости: жилая, загородная, коммерческая, Другие услуги: дизайн интерьера, консультации, нотариат, ремонт, страхование, строительство, управление.
+                .reviews__item
+                    img(src="images/works/reviews-1.jpg", alt="Недвижимость").reviews__img
+                    .reviews__item-content
+                        .reviews__head
+                            img(src="images/works/reviews-avatar-1.jpg", alt="Ирина Потапова").reviews__avatar
+                            .reviews__head-content
+                                .reviews__name Ирина Потапова
+                                time(datetime="24.06.2012").reviews__date 24.06.2012
+                        .reviews__comment
+                            p Аренда недвижимости: жилая, загородная, коммерческая, Другие услуги: дизайн интерьера, консультации, нотариат, ремонт, страхование, строительство, управление.
+            .pagination
+                ul.pagination__list
+                    li.pagination__item.pagination__prev
+                        a(href="#").pagination__link Предыдущая            
+                    .pagination__numbers
+                        li.pagination__item.active
+                            a(href="#").pagination__link 1 
+                        li.pagination__item
+                            a(href="#").pagination__link 2 
+                        li.pagination__item
+                            a(href="#").pagination__link 3 
+                        li.pagination__item
+                            a(href="#").pagination__link 4
+                        li.pagination__item
+                            a(href="#").pagination__link 5
+                    li.pagination__item.pagination__next
+                        a(href="#").pagination__link Следующая            

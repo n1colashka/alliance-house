@@ -45,6 +45,16 @@
             margin-left: 15px;
         }
     }
+
+    .questions {
+        &__content {
+            flex-direction: column;
+        }
+        &__item {
+            margin-left: 0;
+            max-width: 100%;
+        }
+    }
 }
 
 @media (max-width: 1169px) {
@@ -154,6 +164,12 @@
             display: none;
         }
     }
+
+    .reviews-page {
+        .reviews__img {
+            display: none;
+        }
+    }
 }
 
 @media (max-width: 920px) {
@@ -194,6 +210,28 @@
 }
 
 @media (max-width: 768px) {
+
+    .questions {
+        
+        &__item {
+            span {
+                padding: 15px;
+                font-size: 16px;
+                padding-right: 30px;
+            }
+
+            &::before,
+            &::after {
+                right: 10px;
+            }
+        }
+
+        &__answer {
+            padding: 15px;
+            font-size: 14px;
+        }
+    }
+    
     .why {
         &__box {
             padding: 20px;
@@ -205,6 +243,7 @@
 
     .navigation {
         padding-bottom: 15px;
+        background-color: #505770;
 
         &__list {
             display: none;
@@ -503,6 +542,27 @@
             display: none;
         }
     }
+
+    .promotions {
+        &__title {
+            font-size: 36px;
+        }
+
+        &__item-thumb {
+            padding: 20px;
+        }
+        
+        &__content {
+            flex-direction: column;
+        }
+        &__item {
+            flex-basis: auto;
+            margin-left: 0;
+            &:nth-child(2n + 1) {
+                margin-left: 0;
+            }
+        }
+    }
 }
 
 @media (max-width: 599px) {
@@ -514,6 +574,15 @@
 
         &__box--double {
             flex-basis: auto;
+        }
+    }
+
+    .reviews-page {
+        &__content {
+            flex-direction: column;
+        }
+        .reviews__item {
+            margin-left: 0;
         }
     }
 }

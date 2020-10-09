@@ -31,6 +31,16 @@ a {
     text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+h6 {
+    padding: 0;
+    margin: 0;
+}
 // Input number fix
 
 input[type='number'] {
@@ -90,3 +100,80 @@ input::-webkit-inner-spin-button {
         box-shadow: 0.743px 0.669px 18px 2px rgba(116, 116, 116, 0.58);
     }
 }
+
+.breadcrumbs {
+    padding-top: 20px;
+    padding-bottom: 35px;
+
+    &__list {
+        display: flex;
+        align-items: center;
+        @include font('sf-light');
+        font-size: 14px;
+        color: #3b3b3b;
+    }
+
+    &__item {
+        margin-right: 5px;
+    }
+}
+
+.pagination {
+
+    @include font('sf-light');
+    font-size: 14px;
+    color: #aeaeae;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__item {
+        transition: .3s ease;
+
+        &:hover {
+            color: $accent;
+        }
+
+        &.active {
+            color: $accent;
+        }
+    }
+
+    &__prev,
+    &__next {
+        position: relative;
+        padding-bottom: 2px;
+        &::before {
+            position: absolute;
+            content: "";
+            background-color: #aeaeae;
+            height: 1px;
+            width: 100%;
+            left: 0;
+            bottom: 0;
+        }
+
+        &:hover {
+            &::before {
+                background-color: $accent;
+            }
+        }
+    }
+
+    &__numbers {
+        display: flex;
+
+        .pagination__item {
+            margin-left: 7px;
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+
+}
+
+

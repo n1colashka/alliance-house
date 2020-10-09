@@ -1,0 +1,36 @@
+.reviews-page {
+
+    padding-bottom: 110px;
+
+    &__content {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+
+    
+    .reviews {
+
+        &__item {
+            flex: 1 1 calc(50% - 25px);
+            margin-left: 25px;
+            margin-bottom: 25px;
+
+            &:nth-child(2n + 1) {
+                margin-left: 0;
+            }
+        }
+
+        &__img {
+            width: 220px;
+            object-fit: cover;
+        }
+
+        &__item-content {
+            padding: 25px;
+        }
+    }
+}
+
+

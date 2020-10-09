@@ -1,0 +1,104 @@
+.questions {
+
+    padding-bottom: 115px;
+
+    &__title {
+        @include title;
+        margin-bottom: 40px;
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        position: relative;
+        margin-left: 25px;
+        margin-bottom: 15px;
+        color: #000000;
+        max-width: 550px;
+        width: 100%;
+        cursor: pointer;
+
+        &::before,
+        &::after {
+            position: absolute;
+            content: "";
+            right: 25px;
+            top: 26px;
+            width: 22px;
+            height: 2px;
+            background-color: #000000;
+            transition: .3s ease;
+        }
+
+        &::after {
+            transform: rotate(90deg);
+        }
+
+        &:nth-child(2n + 1) {
+            margin-left: 0;
+        }
+
+        &:hover {
+            span {
+                background-color: $accent;
+                color: #ffffff;
+            }
+
+            &::before,
+            &::after {
+                background-color: #fff;
+            }
+
+        }
+
+        span {
+            display: block;
+            background-color: #e8e8e8;
+            padding: 15px 30px;
+            font-size: 18px;
+            color: #000000;
+            transition: .3s ease;
+        }
+
+        &.active {
+            border: 1px solid #e8e8e8;
+            
+            &::before,
+            &::after {
+                background-color: #fff;
+            }
+
+            &::after {
+                transform: rotate(0);
+            }
+            
+            span {
+                color: #ffffff;
+                background-color: $accent;
+            }
+
+            .questions__answer {
+                display: block;
+            }
+        }
+
+    }
+
+    &__answer {
+        display: none;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 30px;
+
+        p {
+            margin-bottom: 30px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+

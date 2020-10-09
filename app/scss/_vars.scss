@@ -2,6 +2,14 @@ $accent: #e18b00;
 $primary: #01011f;
 $dark: #1f1a17;
 
+@mixin title() {
+    font-family: 'Oswald-Semibold', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 60px;
+    color: #000000;
+}
+
 @mixin font($name) {
 
     @if $name == 'oswald' {
