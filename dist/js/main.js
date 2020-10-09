@@ -103,6 +103,8 @@ $(function() {
 
 
     });
+
+    var scrollBarStep = 0;
     
     mainSlider.on('slideNextTransitionStart', function () {
         scrollBarStep += 20;
