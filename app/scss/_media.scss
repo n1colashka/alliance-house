@@ -55,9 +55,36 @@
             max-width: 100%;
         }
     }
+
+    
 }
 
 @media (max-width: 1169px) {
+
+    .projects {
+        &__filter {
+            justify-content: center;
+        }
+        
+        &__btn {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        
+        &__content {
+            justify-content: center;
+        }
+        &__item {
+            margin-left: 15px;
+            margin-right: 15px;
+            width: 35%;
+            &:nth-child(3n + 1) {
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+        }
+    }
+    
     .team {
         &__box--double {
             order: -1;
@@ -210,6 +237,16 @@
 }
 
 @media (max-width: 768px) {
+
+    .projects {
+        &__title {
+            font-size: 36px;
+        }
+
+        &__item {
+            width: auto;
+        }
+    }
 
     .questions {
         

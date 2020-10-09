@@ -1,0 +1,85 @@
+.projects {
+    padding-bottom: 120px;
+    min-height: 1500px;
+
+    &__title {
+        @include title;
+    }
+
+    &__filter {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 45px;
+        margin-bottom: 35px;
+    }
+
+    &__btn {
+        color: #0c0810;
+        background-color: #fff;
+        border: 1px solid #0c0810;
+        padding: 15px 25px;
+        min-width: 200px;
+        cursor: pointer;
+        outline: none;
+        height: 50px;
+        margin-bottom: 20px;
+        transition: .3s ease;
+
+        &:hover {
+            border: 2px solid $accent;
+        }
+
+        &.active {
+            border: 2px solid $accent;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    &__item {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 30px;
+        transition: .3s ease;
+
+        // &:nth-child(3n + 1) {
+        //     margin-left: 0;
+        // }
+        
+        a {
+            position: relative;
+            display: block;
+            
+            &::before {
+                position: absolute;
+                content: "";
+                width: 80px;
+                height: 80px;
+                background: url('../images/icons/zoom.png') center no-repeat;
+                background-color: $accent;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                opacity: 0;
+                transition: .3s ease;
+                border-radius: 50%;
+            }
+        }
+
+        &:hover {
+            a {
+                &::before {
+                    opacity: 1;
+                }
+            }
+        }
+        
+        
+    }
+}

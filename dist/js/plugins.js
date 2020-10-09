@@ -86,4 +86,22 @@ document.addEventListener("click", closeAllSelect);
 // Main screen select /
 
 
-// Main slider scrollbar
+// projects 
+
+$('.projects__filter').on('click', function(event) {
+    if (event.target && event.target.classList.contains('projects__btn')) {
+        $('.projects__btn').removeClass('active');
+        $(event.target).addClass('active');
+        $('.projects__item').hide();
+
+        if (event.target.dataset.tab === 'all') {
+            $('.projects__item').fadeIn('speed');
+        } else {
+            document.querySelectorAll('.projects__item').forEach(function(item){
+            
+                if (item.dataset.tab === event.target.dataset.tab) $(item).fadeIn('speed');
+            });
+        }
+        
+    }
+});

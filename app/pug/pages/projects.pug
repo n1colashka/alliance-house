@@ -1,0 +1,50 @@
+extends ../templates/page.pug
+
+block title
+    title Выполненные работы - Альянс Хаус
+
+block content
+    .container
+        .breadcrumbs
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a(href="index.html").breadcrumbs__link Главная
+                li.breadcrumbs__item
+                    a(href="questions.html").breadcrumbs__link / Выполненные работы
+    section.projects
+        .container
+            h1.projects__title Выполненные работы
+            .projects__filter
+                button.projects__btn(data-tab="all").active Все
+                button.projects__btn(data-tab="san") Санузлы
+                button.projects__btn(data-tab="kitchen") Кухни
+                button.projects__btn(data-tab="livroom") Гостиные
+                button.projects__btn(data-tab="bedroom") Спальни
+            .projects__content
+                .projects__item(data-tab="san")
+                    a(href="images/works/projects-1.jpg", data-fancybox="gallery")
+                        img(src="images/works/projects-1.jpg", alt="Работа")
+                .projects__item(data-tab="san")
+                    a(href="images/works/projects-2.jpg", data-fancybox="gallery")
+                        img(src="images/works/projects-2.jpg", alt="Работа")
+                .projects__item(data-tab="san")
+                    a(href="images/works/projects-3.jpg", data-fancybox="gallery")
+                        img(src="images/works/projects-3.jpg", alt="Работа")
+                .projects__item(data-tab="kitchen")
+                    a(href="images/works/projects-1.jpg", data-fancybox="gallery")
+                        img(src="images/works/projects-1.jpg", alt="Работа")
+                .projects__item(data-tab="bedroom")
+                    a(href="images/works/projects-2.jpg", data-fancybox="gallery")
+                        img(src="images/works/projects-2.jpg", alt="Работа")
+                .projects__item(data-tab="kitchen")
+                    a(href="images/works/projects-3.jpg", data-fancybox="gallery")
+                        img(src="images/works/projects-3.jpg", alt="Работа")
+                .projects__item(data-tab="livroom")
+                    a(href="images/works/projects-1.jpg", data-fancybox="gallery")
+                        img(src="images/works/projects-1.jpg", alt="Работа")
+                .projects__item(data-tab="livroom")
+                    a(href="images/works/projects-2.jpg", data-fancybox="gallery")
+                        img(src="images/works/projects-2.jpg", alt="Работа")
+                .projects__item(data-tab="bedroom")
+                    a(href="images/works/projects-3.jpg", data-fancybox="gallery")
+                        img(src="images/works/projects-3.jpg", alt="Работа")

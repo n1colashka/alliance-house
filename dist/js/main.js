@@ -128,19 +128,6 @@ $(function() {
         }
     });
 
-    // Questions
-
-    // $('.questions__content').on('click', function(event) {
-    //     if ($(event.target.closest('.questions__item'))) {
-    //         document.querySelectorAll('.questions__item').forEach(function(item) {
-    //             $(item).removeClass('active');
-    //             $(item.querySelector('.questions__answer')).hide('');
-    //         });
-    //         $(event.target.closest('.questions__item')).addClass('active');
-    //         $(event.target.closest('.questions__item').querySelector('.questions__answer')).show('');
-    //     }
-    // });
-
     document.querySelectorAll('.questions__item span').forEach(function(item) {
         item.addEventListener('click', function() {
             document.querySelectorAll('.questions__item').forEach(function(block) {
