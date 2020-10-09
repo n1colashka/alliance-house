@@ -1,0 +1,35 @@
+extends ../templates/page.pug
+
+block title
+    title Услуги - Альянс Хаус
+
+block content
+    .container
+        .breadcrumbs
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a(href="index.html").breadcrumbs__link Главная
+                li.breadcrumbs__item
+                    a(href="contacts.html").breadcrumbs__link / Услуги
+    section.services
+        .container
+            h1.services__title Услуги
+            .services__content
+                a(href="#").services__item
+                    img(src="images/icons/build.png", alt="Строительство")
+                    span Строительство
+                a(href="#").services__item
+                    img(src="images/icons/rent.png", alt="Отделочные работы")
+                    span Отделочные работы
+                a(href="#").services__item
+                    img(src="images/icons/architect.png", alt="Услуги дизайнера")
+                    span Услуги дизайнера (архитектора)
+                a(href="#").services__item
+                    img(src="images/icons/sell.png", alt="Продажа")
+                    span Продажа
+                a(href="#").services__item
+                    img(src="images/icons/wallet.png", alt="Услуги кредитного брокера")
+                    span Услуги кредитного брокера
+                a(href="#").services__item
+                    img(src="images/icons/protection.png", alt="Услуги по страхованию")
+                    span Услуги по страхованию

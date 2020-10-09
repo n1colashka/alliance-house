@@ -1,0 +1,41 @@
+.services {
+    padding-bottom: 115px;
+
+    &__title {
+        @include title;
+        margin-bottom: 30px;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        font-size: 22px;
+        color: #000000;
+        height: 150px;
+        margin-bottom: 25px;
+        padding: 40px;
+        border: 1px solid #e8e8e8;
+        transition: .3s ease;
+        flex-basis: calc(33.33% - 30px);
+        margin-left: 30px;
+
+        img {
+            margin-right: 20px;
+        }
+
+        &:nth-child(3n + 1) {
+            flex-basis: 33.33%;
+            margin-left: 0;
+        }
+
+        &:hover {
+            border-color: $accent;
+        }
+    }
+}
