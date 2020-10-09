@@ -69,6 +69,15 @@
             order: -1;
         }
     }
+
+    .main-slider {
+        .slider-scrollbar {
+            top: 44%;
+        }
+        .swiper-pagination {
+            top: 35%;
+        }
+    }
 }
 
 @media (max-width: 1024px) {
@@ -175,6 +184,7 @@
             height: 360px;
         }
     }
+
 }
 
 @media (max-width: 768px) {
@@ -476,6 +486,15 @@
                 height: 24px;
                 background-color: $accent;
             }
+        }
+    }
+
+    .main-slider {
+        .slider-scrollbar {
+            display: none;
+        }
+        .swiper-pagination {
+            display: none;
         }
     }
 }

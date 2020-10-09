@@ -67,7 +67,7 @@ function closeAllSelect(elmnt) {
     yl = y.length;
     for (i = 0; i < yl; i++) {
         if (elmnt == y[i]) {
-            arrNo.push(i)
+            arrNo.push(i);
         } else {
             y[i].classList.remove("select-arrow-active");
         }
@@ -84,3 +84,6 @@ then close all select boxes: */
 document.addEventListener("click", closeAllSelect);
 
 // Main screen select /
+
+
+// Main slider scrollbar

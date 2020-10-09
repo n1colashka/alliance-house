@@ -12,58 +12,10 @@ html(lang="ru")
             link(rel="shortcut icon", href="images/favicon/favicon.ico", type="image/x-icon")
             link(rel="shortcut icon" type="image/png" href="images/favicon/favicon-32x32.png")
     body
-        .main-screen
-            block header
-                include ../includes/header
-            section.main-slider
-                .container
-                    .main-slider__inner
-                        h1.main-slider__title Подберём идеальную для вас недвижимость
-                        .main-slider__text
-                            p Агентство Недвижимости "Альянс Хаус" предлагает полный спектр     услуг по вопросам недвижимости!
-                        form(action="#").main-slider__form
-                            .main-slider__form-item.main-slider__form-property.custom-select
-                                select(name="searchProperty")
-                                    option(value="1") Жилая недвижимость
-                                    option(value="2") Загородная недвижимость
-                                    option(value="3") Коммерческая недвижимость
-                                    option(value="4") Элитная недвижимость
-                                    option(value="4") Квартиры в новостройках
-                            .main-slider__form-item.main-slider__form-area
-                                span.main-slider__form-area-btn Регион, город
-                                .main-slider__form-area-menu
-                                    .main-slider__form-inner
-                                        label.checkbox-container Все
-                                            input(type="checkbox", checked="checked")
-                                            span.checkmark
-                                        label.checkbox-container Вторичное жильё
-                                            input(type="checkbox")
-                                            span.checkmark
-                                        label.checkbox-container Комнаты
-                                            input(type="checkbox")
-                                            span.checkmark
-                                        label.checkbox-container 1-комнатные квартиры
-                                            input(type="checkbox")
-                                            span.checkmark
-                                        label.checkbox-container 2-комнатные квартиры
-                                            input(type="checkbox")
-                                            span.checkmark
-                                        label.checkbox-container 3-комнатные квартиры
-                                            input(type="checkbox")
-                                            span.checkmark
-                                        label.checkbox-container 4-комнатные квартиры
-                                            input(type="checkbox")
-                                            span.checkmark
-                            .main-slider__form-item.main-slider__form-price
-                                span.main-slider__form-price-btn Цена
-                                .main-slider__form-price-menu
-                                    .main-slider__form-price-input
-                                        input(type="number" placeholder="от" name="searchPriceFrom")
-                                    .main-slider__form-price-input
-                                        input(type="number" placeholder="до" name="searchPriceTo")
-                            button(type="submit").main-slider__form-btn Найти
+        block header
+            include ../includes/header-main
         block content
-
+            
         block footer
             include ../includes/footer
         block scripts
