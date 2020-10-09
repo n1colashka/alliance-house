@@ -1,0 +1,69 @@
+extends ../templates/page.pug
+
+block title
+    title Контакты - Альянс Хаус
+
+block content
+    .container
+        .breadcrumbs
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a(href="index.html").breadcrumbs__link Главная
+                li.breadcrumbs__item
+                    a(href="contacts.html").breadcrumbs__link / Контакты
+    section.contacts-page
+        .container
+            h1.contacts-page__title Контакты
+            .contacts-page__info
+                .contacts-page__col
+                    .contacts-page__item
+                        span Адрес:
+                        a(href="#") г. Казань, ул. Закиева, д.4, оф.5
+                    .contacts-page__download
+                        a(href="#" download) Скачать схему проезда
+                .contacts-page__col
+                    .contacts-page__item
+                        span Контактные телефоны:
+                        div.contacts-page__phone-wrapper
+                            a(href="tel:8 (843) 248 43-15 ") 8 (843) 248 43-15,
+                            a(href="tel:8 (843) 225 15-14 ") 8 (843) 225 15-14 
+                    .contacts-page__socials.socials
+                        .socials__label Соц.сети:
+                        ul.socials__list
+                            li.socials__item
+                                a(href="#").socials__link
+                                    img(src="images/icons/youtube.png", alt="Youtube")
+                            li.socials__item
+                                a(href="#").socials__link
+                                    img(src="images/icons/fb.png", alt="Facebook")
+                            li.socials__item
+                                a(href="#").socials__link
+                                    img(src="images/icons/vk.png", alt="Вконтакте")
+                            li.socials__item
+                                a(href="#").socials__link
+                                    img(src="images/icons/insta.png", alt="Instagram")
+                            li.socials__item
+                                a(href="#").socials__link
+                                    img(src="images/icons/twitter.png", alt="Twitter")
+                            li.socials__item
+                                a(href="#").socials__link
+                                    img(src="images/icons/ok.png", alt="Одноклассники")
+                .contacts-page__col
+                    .contacts-page__item
+                        span E-mail:
+                        a(href="mailto:alliance-house@yandex.ru") alliance-house@yandex.ru
+            .contacts-page__map
+                iframe(src="https://snazzymaps.com/embed/266328" width="100%" height="600" style="border:none;")
+            h2.contacts-page__form-title Остались вопросы?
+            .contacts__form.contacts-page__form
+                form(action="#")
+                    .contacts-page__inputs
+                        input(type="text" placeholder="Ваше имя*").contacts__input
+                        input(type="text" placeholder="Ваш телефон*").contacts__input
+                    textarea(placeholder="Сообщение").contacts__input
+                    label.contacts__checkbox.checkbox-container
+                        input(type="checkbox", name="contactsPagesCheckbox") 
+                        | Оставляя заявку, я соглашаюсь с 
+                        span.contacts__checkbox-under-text правилами конфиденциальности
+                        span.checkmark
+                    button(type="submit").contacts__btn.btn Оставить заявку

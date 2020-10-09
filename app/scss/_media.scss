@@ -238,6 +238,57 @@
 
 @media (max-width: 768px) {
 
+    .contacts-page {
+        &__title {
+            font-size: 36px;
+            line-height: 48px;
+        }
+        
+        &__info {
+            flex-direction: column;
+        }
+
+        &__col {
+            margin-bottom: 20px;
+        }
+
+        &__item {
+            margin-bottom: 20px;
+        }
+
+        &__phone-wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__form-title {
+            font-size: 36px;
+            line-height: 48px;
+        }
+
+        &__inputs {
+            
+            .contacts__input {
+                flex-basis: auto;
+                margin-left: 0;
+                &:first-child {
+                    flex-basis: auto;
+                }
+            }
+        }
+    }
+
+    .contacts-page__map {
+        iframe {
+            height: 300px;
+        }
+    }
+
+    .socials__label {
+        margin-top: 0;
+    }
+    
+
     .projects {
         &__title {
             font-size: 36px;
