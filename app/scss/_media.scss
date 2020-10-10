@@ -828,6 +828,20 @@
     }
 
     .catalog {
+        .swiper-pagination .swiper-pagination-bullet {
+            width: 12px;
+            height: 12px;
+            &.swiper-pagination-bullet-active {
+                width: 12px;
+                height: 12px;
+            }
+        }
+
+        &__title {
+            font-size: 36px;
+            line-height: 48px;
+        }
+        
         &__inner {
             flex-direction: column;
         }
