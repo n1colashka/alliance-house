@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Каталог - Альянс Хаус</title>
+  <link href="css/libs.min.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" type="image/png" href="images/favicon/favicon-32x32.png" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <div class="container">
+        <div class="header__top">
+          <a class="header__logo logo" href="index.html">
+            <img src="images/logo-white.png" alt="Альянс хаус - агенство недвижимости" width="140" />
+          </a>
+          <div class="header__links"><a class="header__link" href="tel:8(931)5010220">8 (931) 501-02-20</a><a class="header__link" href="tel:8(931)5010220">8 (931) 501-02-20</a>
+          </div>
+          <button class="header__btn modal-open-btn" data-src="#request-modal" data-fancybox="data-fancybox">Заказать звонок</button>
+        </div>
+      </div>
+      <nav class="header__navigation navigation">
+        <div class="container">
+          <div class="navigation__inner"><span></span>
+            <ul class="navigation__list">
+              <li class="navigation__item"><a class="navigation__link" href="services.html">Услуги</a>
+              </li>
+              <li class="navigation__item"><a class="navigation__link" href="about.html">О компании</a>
+              </li>
+              <li class="navigation__item"><a class="navigation__link" href="promotions.html">Акции</a>
+              </li>
+              <li class="navigation__item"><a class="navigation__link" href="reviews.html">Отзывы</a>
+              </li>
+              <li class="navigation__item"><a class="navigation__link" href="projects.html">Выполненные работы</a>
+              </li>
+              <li class="navigation__item"><a class="navigation__link" href="questions.html">Вопрос-ответ</a>
+              </li>
+              <li class="navigation__item"><a class="navigation__link" href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+            <button class="menu-btn"><span></span>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <div class="container">
+    <div class="breadcrumbs">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a>
+        </li>
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="card.html">/ Услуги</a>
+        </li>
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="card.html">/ Продажа квартир</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <section class="catalog">
+    <div class="container">
+      <h1 class="catalog__title">Продажа квартир</h1>
+      <div class="catalog__inner">
+        <aside class="catalog__aside catalog-aside">
+          <div class="catalog-aside__content"><a class="catalog-aside__type active" href="#">Продажа (840)</a><a class="catalog-aside__type" href="#">Аренда (40)</a><a class="catalog-aside__type" href="#">Покупка (932)</a>
+            <hr/>
+            <div class="catalog-aside__accordion">
+              <div class="catalog-aside__item">Вид недвижимости
+                <div class="catalog-aside__item-content">
+                  <label class="catalog-aside__checkbox checkbox-container">
+                    <input type="checkbox" />Все<span class="checkmark"></span>
+                  </label>
+                  <label class="catalog-aside__checkbox checkbox-container">
+                    <input type="checkbox" />Вторичное жильё<span class="checkmark"></span>
+                  </label>
+                  <label class="catalog-aside__checkbox checkbox-container">
+                    <input type="checkbox" />Комнаты<span class="checkmark"></span>
+                  </label>
+                  <label class="catalog-aside__checkbox checkbox-container">
+                    <input type="checkbox" />1-комнатные квартиры<span class="checkmark"></span>
+                  </label>
+                  <label class="catalog-aside__checkbox checkbox-container">
+                    <input type="checkbox" />2-комнатные квартиры<span class="checkmark"></span>
+                  </label>
+                  <label class="catalog-aside__checkbox checkbox-container">
+                    <input type="checkbox" />3-комнатные квартиры<span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+              <hr/>
+              <div class="catalog-aside__item">Цена
+                <div class="catalog-aside__item-content">
+                  <div class="catalog-aside__price-wrapper">
+                    <div class="catalog-aside__price">
+                      <input type="number" placeholder="от" name="catalogSearchPriceFrom" />
+                    </div>
+                    <div class="catalog-aside__price">
+                      <input type="number" placeholder="до" name="catalogSearchPriceTo" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr/>
+              <div class="catalog-aside__item">Район, город
+                <div class="catalog-aside__item-content">
+                  <label class="catalog-aside__checkbox checkbox-container">
+                    <input type="checkbox" />Все<span class="checkmark"></span>
+                  </label>
+                  <label class="catalog-aside__checkbox checkbox-container">
+                    <input type="checkbox" />Вторичное жильё<span class="checkmark"></span>
+                  </label>
+                  <label class="catalog-aside__checkbox checkbox-container">
+                    <input type="checkbox" />Комнаты<span class="checkmark"></span>
+                  </label>
+                  <label class="catalog-aside__checkbox checkbox-container">
+                    <input type="checkbox" />1-комнатные квартиры<span class="checkmark"></span>
+                  </label>
+                  <label class="catalog-aside__checkbox checkbox-container">
+                    <input type="checkbox" />2-комнатные квартиры<span class="checkmark"></span>
+                  </label>
+                  <label class="catalog-aside__checkbox checkbox-container">
+                    <input type="checkbox" />3-комнатные квартиры<span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+              <hr/>
+              <div class="catalog-aside__item">Общая площадь
+                <div class="catalog-aside__item-content">
+                  <label class="catalog-aside__checkbox checkbox-container">
+                    <input type="checkbox" />Все<span class="checkmark"></span>
+                  </label>
+                  <label class="catalog-aside__checkbox checkbox-container">
+                    <input type="checkbox" />Вторичное жильё<span class="checkmark"></span>
+                  </label>
+                  <label class="catalog-aside__checkbox checkbox-container">
+                    <input type="checkbox" />Комнаты<span class="checkmark"></span>
+                  </label>
+                  <label class="catalog-aside__checkbox checkbox-container">
+                    <input type="checkbox" />1-комнатные квартиры<span class="checkmark"></span>
+                  </label>
+                  <label class="catalog-aside__checkbox checkbox-container">
+                    <input type="checkbox" />2-комнатные квартиры<span class="checkmark"></span>
+                  </label>
+                  <label class="catalog-aside__checkbox checkbox-container">
+                    <input type="checkbox" />3-комнатные квартиры<span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <div class="catalog__content">
+          <div class="catalog__head">
+            <div class="catalog__sort">
+              <select>
+                <option selected="selected">Сортировать: по дате публикации</option>
+                <option>Сортировать: по популярности</option>
+                <option>Сортировать: по цене</option>
+              </select>
+            </div>
+            <div class="catalog__caption">Всего 33 объекта</div>
+          </div>
+          <div class="catalog__items">
+            <a class="catalog__item" href="#">
+              <div class="catalog__img swiper-container catalog__img-slider">
+                <div class="swiper-wrapper">
+                  <img class="swiper-slide" src="images/catalog/catalog-1.jpg" alt="Квартира" />
+                  <img class="swiper-slide" src="images/catalog/catalog-2.jpg" alt="Квартира" />
+                  <img class="swiper-slide" src="images/catalog/catalog-3.jpg" alt="Квартира" />
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <div class="catalog__item-title">1-к квартира, 50м<sup>2</sup>, 11/16 эт.</div>
+              <div class="catalog__item-subtitle">г. Москва, ул. Карла-Маркса, д 35А</div>
+              <hr/>
+              <div class="catalog__price-wrapper">
+                <div class="catalog__price">4 230 000 ₽</div>
+                <div class="catalog__dollar-price">$ 70 209</div>
+              </div>
+            </a>
+            <a class="catalog__item" href="#">
+              <div class="catalog__img swiper-container catalog__img-slider">
+                <div class="swiper-wrapper">
+                  <img class="swiper-slide" src="images/catalog/catalog-2.jpg" alt="Квартира" />
+                  <img class="swiper-slide" src="images/catalog/catalog-3.jpg" alt="Квартира" />
+                  <img class="swiper-slide" src="images/catalog/catalog-1.jpg" alt="Квартира" />
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <div class="catalog__item-title">1-к квартира, 38м<sup>2</sup>, 3/16 эт.</div>
+              <div class="catalog__item-subtitle">г. Москва, ул. Карла-Маркса, д 35А</div>
+              <hr/>
+              <div class="catalog__price-wrapper">
+                <div class="catalog__price">7 360 000 ₽</div>
+                <div class="catalog__dollar-price">$ 70 209</div>
+              </div>
+            </a>
+            <a class="catalog__item" href="#">
+              <div class="catalog__img swiper-container catalog__img-slider">
+                <div class="swiper-wrapper">
+                  <img class="swiper-slide" src="images/catalog/catalog-3.jpg" alt="Квартира" />
+                  <img class="swiper-slide" src="images/catalog/catalog-2.jpg" alt="Квартира" />
+                  <img class="swiper-slide" src="images/catalog/catalog-1.jpg" alt="Квартира" />
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <div class="catalog__item-title">1-к квартира, 50м<sup>2</sup>, 3/16 эт.</div>
+              <div class="catalog__item-subtitle">г. Москва, ул. Карла-Маркса, д 35А</div>
+              <hr/>
+              <div class="catalog__price-wrapper">
+                <div class="catalog__price">4 230 000 ₽</div>
+                <div class="catalog__dollar-price">$ 70 209</div>
+              </div>
+            </a>
+            <a class="catalog__item" href="#">
+              <div class="catalog__img swiper-container catalog__img-slider">
+                <div class="swiper-wrapper">
+                  <img class="swiper-slide" src="images/catalog/catalog-1.jpg" alt="Квартира" />
+                  <img class="swiper-slide" src="images/catalog/catalog-2.jpg" alt="Квартира" />
+                  <img class="swiper-slide" src="images/catalog/catalog-3.jpg" alt="Квартира" />
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <div class="catalog__item-title">1-к квартира, 50м<sup>2</sup>, 11/16 эт.</div>
+              <div class="catalog__item-subtitle">г. Москва, ул. Карла-Маркса, д 35А</div>
+              <hr/>
+              <div class="catalog__price-wrapper">
+                <div class="catalog__price">4 230 000 ₽</div>
+                <div class="catalog__dollar-price">$ 70 209</div>
+              </div>
+            </a>
+            <a class="catalog__item" href="#">
+              <div class="catalog__img swiper-container catalog__img-slider">
+                <div class="swiper-wrapper">
+                  <img class="swiper-slide" src="images/catalog/catalog-2.jpg" alt="Квартира" />
+                  <img class="swiper-slide" src="images/catalog/catalog-3.jpg" alt="Квартира" />
+                  <img class="swiper-slide" src="images/catalog/catalog-1.jpg" alt="Квартира" />
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <div class="catalog__item-title">1-к квартира, 38м<sup>2</sup>, 3/16 эт.</div>
+              <div class="catalog__item-subtitle">г. Москва, ул. Карла-Маркса, д 35А</div>
+              <hr/>
+              <div class="catalog__price-wrapper">
+                <div class="catalog__price">7 360 000 ₽</div>
+                <div class="catalog__dollar-price">$ 70 209</div>
+              </div>
+            </a>
+            <a class="catalog__item" href="#">
+              <div class="catalog__img swiper-container catalog__img-slider">
+                <div class="swiper-wrapper">
+                  <img class="swiper-slide" src="images/catalog/catalog-3.jpg" alt="Квартира" />
+                  <img class="swiper-slide" src="images/catalog/catalog-2.jpg" alt="Квартира" />
+                  <img class="swiper-slide" src="images/catalog/catalog-1.jpg" alt="Квартира" />
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <div class="catalog__item-title">1-к квартира, 50м<sup>2</sup>, 3/16 эт.</div>
+              <div class="catalog__item-subtitle">г. Москва, ул. Карла-Маркса, д 35А</div>
+              <hr/>
+              <div class="catalog__price-wrapper">
+                <div class="catalog__price">4 230 000 ₽</div>
+                <div class="catalog__dollar-price">$ 70 209</div>
+              </div>
+            </a>
+            <a class="catalog__item" href="#">
+              <div class="catalog__img swiper-container catalog__img-slider">
+                <div class="swiper-wrapper">
+                  <img class="swiper-slide" src="images/catalog/catalog-1.jpg" alt="Квартира" />
+                  <img class="swiper-slide" src="images/catalog/catalog-2.jpg" alt="Квартира" />
+                  <img class="swiper-slide" src="images/catalog/catalog-3.jpg" alt="Квартира" />
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <div class="catalog__item-title">1-к квартира, 50м<sup>2</sup>, 11/16 эт.</div>
+              <div class="catalog__item-subtitle">г. Москва, ул. Карла-Маркса, д 35А</div>
+              <hr/>
+              <div class="catalog__price-wrapper">
+                <div class="catalog__price">4 230 000 ₽</div>
+                <div class="catalog__dollar-price">$ 70 209</div>
+              </div>
+            </a>
+            <a class="catalog__item" href="#">
+              <div class="catalog__img swiper-container catalog__img-slider">
+                <div class="swiper-wrapper">
+                  <img class="swiper-slide" src="images/catalog/catalog-2.jpg" alt="Квартира" />
+                  <img class="swiper-slide" src="images/catalog/catalog-3.jpg" alt="Квартира" />
+                  <img class="swiper-slide" src="images/catalog/catalog-1.jpg" alt="Квартира" />
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <div class="catalog__item-title">1-к квартира, 38м<sup>2</sup>, 3/16 эт.</div>
+              <div class="catalog__item-subtitle">г. Москва, ул. Карла-Маркса, д 35А</div>
+              <hr/>
+              <div class="catalog__price-wrapper">
+                <div class="catalog__price">7 360 000 ₽</div>
+                <div class="catalog__dollar-price">$ 70 209</div>
+              </div>
+            </a>
+            <a class="catalog__item" href="#">
+              <div class="catalog__img swiper-container catalog__img-slider">
+                <div class="swiper-wrapper">
+                  <img class="swiper-slide" src="images/catalog/catalog-3.jpg" alt="Квартира" />
+                  <img class="swiper-slide" src="images/catalog/catalog-2.jpg" alt="Квартира" />
+                  <img class="swiper-slide" src="images/catalog/catalog-1.jpg" alt="Квартира" />
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <div class="catalog__item-title">1-к квартира, 50м<sup>2</sup>, 3/16 эт.</div>
+              <div class="catalog__item-subtitle">г. Москва, ул. Карла-Маркса, д 35А</div>
+              <hr/>
+              <div class="catalog__price-wrapper">
+                <div class="catalog__price">4 230 000 ₽</div>
+                <div class="catalog__dollar-price">$ 70 209</div>
+              </div>
+            </a>
+          </div>
+          <div class="pagination">
+            <ul class="pagination__list">
+              <li class="pagination__item pagination__prev"><a class="pagination__link" href="#">Предыдущая            </a>
+              </li>
+              <div class="pagination__numbers">
+                <li class="pagination__item active"><a class="pagination__link" href="#">1 </a>
+                </li>
+                <li class="pagination__item"><a class="pagination__link" href="#">2 </a>
+                </li>
+                <li class="pagination__item"><a class="pagination__link" href="#">3 </a>
+                </li>
+                <li class="pagination__item"><a class="pagination__link" href="#">4</a>
+                </li>
+                <li class="pagination__item"><a class="pagination__link" href="#">5</a>
+                </li>
+              </div>
+              <li class="pagination__item pagination__next"><a class="pagination__link" href="#">Следующая            </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="modal" id="request-modal">
+    <div class="modal__content">
+      <div class="modal__info">
+        <div class="modal__title">Оставить заявку</div>
+        <div class="modal__subtitle">Мы перезвоним вам и согласуем дату и время</div>
+        <form class="modal__form" action="#">
+          <div class="modal__input">
+            <input type="text" autocomplete="off" autofocus="autofocus" required="required" /><span class="modal__input-label">Ваше имя</span>
+          </div>
+          <div class="modal__input">
+            <input type="number" autocomplete="off" required="required" /><span class="modal__input-label">Номер телефона</span>
+          </div>
+          <label class="modal__checkbox checkbox-container">
+            <input type="checkbox" name="modalCheckbox" />Я принимаю условия публичного договора оферты и даю согласие на обработку моих персональных данных.<span class="checkmark"></span>
+          </label>
+          <button class="modal__btn">Заказать звонок</button>
+        </form>
+      </div>
+      <img class="modal__img" src="images/modal-1.jpg" alt="Оставить заявку" />
+    </div>
+  </div>
+  <footer class="footer">
+    <nav class="footer__navigation footer-navigation">
+      <div class="container">
+        <ul class="footer-navigation__list">
+          <li class="footer-navigation__item"><a class="footer-navigation__link" href="#">О компании</a>
+          </li>
+          <li class="footer-navigation__item"><a class="footer-navigation__link" href="#">Услуги</a>
+          </li>
+          <li class="footer-navigation__item"><a class="footer-navigation__link" href="promotions.html">Акции</a>
+          </li>
+          <li class="footer-navigation__item"><a class="footer-navigation__link" href="reviews.html">Отзывы</a>
+          </li>
+          <li class="footer-navigation__item"><a class="footer-navigation__link" href="#">Новости</a>
+          </li>
+          <li class="footer-navigation__item"><a class="footer-navigation__link" href="#">Статьи</a>
+          </li>
+          <li class="footer-navigation__item"><a class="footer-navigation__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="footer__main">
+      <div class="container">
+        <div class="footer__main-inner">
+          <div class="footer__col">
+            <a class="footer__logo logo" href="#">
+              <img src="images/logo.png" alt="Альянс Хаус" width="140" />
+            </a>
+            <div class="footer__address"><span>398040, г. Казань</span>ул. Закиева, д.4, оф.5</div>
+          </div>
+          <div class="footer__col">
+            <div class="footer__socials socials">
+              <ul class="socials__list">
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <img src="images/icons/youtube.png" alt="Youtube" />
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <img src="images/icons/fb.png" alt="Facebook" />
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <img src="images/icons/vk.png" alt="Вконтакте" />
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <img src="images/icons/insta.png" alt="Instagram" />
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <img src="images/icons/twitter.png" alt="Twitter" />
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <img src="images/icons/ok.png" alt="Одноклассники" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__col">
+            <div class="footer__contacts">
+              <div class="footer__item"><span>Телефон</span><a href="tel:8(843)2484315">8 (843) 248 43-15</a>
+              </div>
+              <div class="footer__item"><span>Факс</span><a href="tel:8(843)2251514">8 (843) 225 15-14</a>
+              </div>
+              <div class="footer__item"><span>E-mail</span><a href="mailto:alliance-house@yandex.ru">alliance-house@yandex.ru</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="footer__copy">
+        <div class="footer__copy-item">&copy; ООО «Альтранс Хаус», 2020</div><a class="footer__copy-item footer__copy-item--underline" href="#">Политика конфиденциальности</a>
+        <div class="footer__copy-item">Разработка сайта
+          <img src="images/grampus-logo.png" alt="Grampus" />
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/libs.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

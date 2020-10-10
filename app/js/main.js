@@ -66,9 +66,7 @@ $(function() {
     });
 
     var reviewsSlider = new Swiper('.reviews__slider', {
-        // Optional parameters
         loop: true,
-        // If we need pagination
         navigation: {
             nextEl: '.slider-next',
             prevEl: '.slider-prev',
@@ -166,6 +164,9 @@ $(function() {
         watchSlidesProgress: true,
     });
     var cardSlider = new Swiper('.card__big-slider', {
+        autoplay: {
+            delay: 3500
+        },
         navigation: {
         nextEl: '.slider-next',
         prevEl: '.slider-prev',
@@ -173,6 +174,34 @@ $(function() {
         thumbs: {
         swiper: cardThumbs
         }
+    });
+
+    // catalog
+
+    $('.catalog-aside__accordion').on('click', function(event) {
+        if (event.target && event.target.classList.contains('catalog-aside__item')) {
+            event.preventDefault();
+            event.target.classList.toggle('active');
+        }
+    });
+
+    $('.catalog-aside__content').on('click', function(event) {
+        if (event.target && event.target.classList.contains('catalog-aside__type')) {
+            event.preventDefault();
+            document.querySelectorAll('.catalog-aside__type').forEach(function(item) {
+                item.classList.remove('active');
+            });
+            event.target.classList.add('active');
+        }
+    });
+
+    
+    var catalogImgSlider = new Swiper('.catalog__img-slider', {
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+        }
+
     });
 
 });

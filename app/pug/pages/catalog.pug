@@ -1,0 +1,278 @@
+extends ../templates/page.pug
+
+block title
+    title Каталог - Альянс Хаус
+
+block content
+    .container
+        .breadcrumbs
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a(href="index.html").breadcrumbs__link Главная
+                li.breadcrumbs__item
+                    a(href="card.html").breadcrumbs__link / Услуги
+                li.breadcrumbs__item
+                    a(href="card.html").breadcrumbs__link / Продажа квартир
+    section.catalog
+        .container
+            h1.catalog__title Продажа квартир
+            .catalog__inner
+                aside.catalog__aside.catalog-aside
+                    .catalog-aside__content
+                        a(href="#").catalog-aside__type.active Продажа (840)
+                        a(href="#").catalog-aside__type Аренда (40)
+                        a(href="#").catalog-aside__type Покупка (932)
+                        hr
+                        .catalog-aside__accordion
+                            .catalog-aside__item Вид недвижимости
+                                .catalog-aside__item-content
+                                    label.catalog-aside__checkbox.checkbox-container
+                                        input(type="checkbox")
+                                        | Все
+                                        span.checkmark
+                                    label.catalog-aside__checkbox.checkbox-container
+                                        input(type="checkbox")
+                                        | Вторичное жильё
+                                        span.checkmark
+                                    label.catalog-aside__checkbox.checkbox-container
+                                        input(type="checkbox")
+                                        | Комнаты
+                                        span.checkmark
+                                    label.catalog-aside__checkbox.checkbox-container
+                                        input(type="checkbox")
+                                        | 1-комнатные квартиры
+                                        span.checkmark
+                                    label.catalog-aside__checkbox.checkbox-container
+                                        input(type="checkbox")
+                                        | 2-комнатные квартиры
+                                        span.checkmark
+                                    label.catalog-aside__checkbox.checkbox-container
+                                        input(type="checkbox")
+                                        | 3-комнатные квартиры
+                                        span.checkmark
+                            hr
+                            .catalog-aside__item Цена
+                                .catalog-aside__item-content
+                                    .catalog-aside__price-wrapper
+                                        .catalog-aside__price
+                                            input(type="number" placeholder="от" name="catalogSearchPriceFrom")
+                                        .catalog-aside__price
+                                            input(type="number" placeholder="до" name="catalogSearchPriceTo")
+                            hr
+                            .catalog-aside__item Район, город
+                                .catalog-aside__item-content
+                                    label.catalog-aside__checkbox.checkbox-container
+                                        input(type="checkbox")
+                                        | Все
+                                        span.checkmark
+                                    label.catalog-aside__checkbox.checkbox-container
+                                        input(type="checkbox")
+                                        | Вторичное жильё
+                                        span.checkmark
+                                    label.catalog-aside__checkbox.checkbox-container
+                                        input(type="checkbox")
+                                        | Комнаты
+                                        span.checkmark
+                                    label.catalog-aside__checkbox.checkbox-container
+                                        input(type="checkbox")
+                                        | 1-комнатные квартиры
+                                        span.checkmark
+                                    label.catalog-aside__checkbox.checkbox-container
+                                        input(type="checkbox")
+                                        | 2-комнатные квартиры
+                                        span.checkmark
+                                    label.catalog-aside__checkbox.checkbox-container
+                                        input(type="checkbox")
+                                        | 3-комнатные квартиры
+                                        span.checkmark
+                            hr
+                            .catalog-aside__item Общая площадь
+                                .catalog-aside__item-content
+                                    label.catalog-aside__checkbox.checkbox-container
+                                        input(type="checkbox")
+                                        | Все
+                                        span.checkmark
+                                    label.catalog-aside__checkbox.checkbox-container
+                                        input(type="checkbox")
+                                        | Вторичное жильё
+                                        span.checkmark
+                                    label.catalog-aside__checkbox.checkbox-container
+                                        input(type="checkbox")
+                                        | Комнаты
+                                        span.checkmark
+                                    label.catalog-aside__checkbox.checkbox-container
+                                        input(type="checkbox")
+                                        | 1-комнатные квартиры
+                                        span.checkmark
+                                    label.catalog-aside__checkbox.checkbox-container
+                                        input(type="checkbox")
+                                        | 2-комнатные квартиры
+                                        span.checkmark
+                                    label.catalog-aside__checkbox.checkbox-container
+                                        input(type="checkbox")
+                                        | 3-комнатные квартиры
+                                        span.checkmark
+                                
+                .catalog__content
+                    .catalog__head
+                        .catalog__sort
+                            select
+                                option(selected) Сортировать: по дате публикации
+                                option Сортировать: по популярности
+                                option Сортировать: по цене
+                        .catalog__caption Всего 33 объекта
+                    .catalog__items
+                        a(href="#").catalog__item
+                            .catalog__img.swiper-container.catalog__img-slider
+                                .swiper-wrapper
+                                    img(src="images/catalog/catalog-1.jpg", alt="Квартира").swiper-slide
+                                    img(src="images/catalog/catalog-2.jpg", alt="Квартира").swiper-slide
+                                    img(src="images/catalog/catalog-3.jpg", alt="Квартира").swiper-slide
+                                .swiper-pagination
+                            .catalog__item-title 1-к квартира, 50м
+                                sup 2
+                                |, 11/16 эт.
+                            .catalog__item-subtitle г. Москва, ул. Карла-Маркса, д 35А
+                            hr
+                            .catalog__price-wrapper
+                                .catalog__price 4 230 000 ₽
+                                .catalog__dollar-price $ 70 209
+                        a(href="#").catalog__item
+                            .catalog__img.swiper-container.catalog__img-slider
+                                .swiper-wrapper
+                                    img(src="images/catalog/catalog-2.jpg", alt="Квартира").swiper-slide
+                                    img(src="images/catalog/catalog-3.jpg", alt="Квартира").swiper-slide
+                                    img(src="images/catalog/catalog-1.jpg", alt="Квартира").swiper-slide
+                                .swiper-pagination
+                            .catalog__item-title 1-к квартира, 38м
+                                sup 2
+                                |, 3/16 эт.
+                            .catalog__item-subtitle г. Москва, ул. Карла-Маркса, д 35А
+                            hr
+                            .catalog__price-wrapper
+                                .catalog__price 7 360 000 ₽
+                                .catalog__dollar-price $ 70 209
+                        a(href="#").catalog__item
+                            .catalog__img.swiper-container.catalog__img-slider
+                                .swiper-wrapper
+                                    img(src="images/catalog/catalog-3.jpg", alt="Квартира").swiper-slide
+                                    img(src="images/catalog/catalog-2.jpg", alt="Квартира").swiper-slide
+                                    img(src="images/catalog/catalog-1.jpg", alt="Квартира").swiper-slide
+                                .swiper-pagination
+                            .catalog__item-title 1-к квартира, 50м
+                                sup 2
+                                |, 3/16 эт.
+                            .catalog__item-subtitle г. Москва, ул. Карла-Маркса, д 35А
+                            hr
+                            .catalog__price-wrapper
+                                .catalog__price 4 230 000 ₽
+                                .catalog__dollar-price $ 70 209
+                        
+                        a(href="#").catalog__item
+                            .catalog__img.swiper-container.catalog__img-slider
+                                .swiper-wrapper
+                                    img(src="images/catalog/catalog-1.jpg", alt="Квартира").swiper-slide
+                                    img(src="images/catalog/catalog-2.jpg", alt="Квартира").swiper-slide
+                                    img(src="images/catalog/catalog-3.jpg", alt="Квартира").swiper-slide
+                                .swiper-pagination
+                            .catalog__item-title 1-к квартира, 50м
+                                sup 2
+                                |, 11/16 эт.
+                            .catalog__item-subtitle г. Москва, ул. Карла-Маркса, д 35А
+                            hr
+                            .catalog__price-wrapper
+                                .catalog__price 4 230 000 ₽
+                                .catalog__dollar-price $ 70 209
+                        a(href="#").catalog__item
+                            .catalog__img.swiper-container.catalog__img-slider
+                                .swiper-wrapper
+                                    img(src="images/catalog/catalog-2.jpg", alt="Квартира").swiper-slide
+                                    img(src="images/catalog/catalog-3.jpg", alt="Квартира").swiper-slide
+                                    img(src="images/catalog/catalog-1.jpg", alt="Квартира").swiper-slide
+                                .swiper-pagination
+                            .catalog__item-title 1-к квартира, 38м
+                                sup 2
+                                |, 3/16 эт.
+                            .catalog__item-subtitle г. Москва, ул. Карла-Маркса, д 35А
+                            hr
+                            .catalog__price-wrapper
+                                .catalog__price 7 360 000 ₽
+                                .catalog__dollar-price $ 70 209
+                        a(href="#").catalog__item
+                            .catalog__img.swiper-container.catalog__img-slider
+                                .swiper-wrapper
+                                    img(src="images/catalog/catalog-3.jpg", alt="Квартира").swiper-slide
+                                    img(src="images/catalog/catalog-2.jpg", alt="Квартира").swiper-slide
+                                    img(src="images/catalog/catalog-1.jpg", alt="Квартира").swiper-slide
+                                .swiper-pagination
+                            .catalog__item-title 1-к квартира, 50м
+                                sup 2
+                                |, 3/16 эт.
+                            .catalog__item-subtitle г. Москва, ул. Карла-Маркса, д 35А
+                            hr
+                            .catalog__price-wrapper
+                                .catalog__price 4 230 000 ₽
+                                .catalog__dollar-price $ 70 209
+                        a(href="#").catalog__item
+                            .catalog__img.swiper-container.catalog__img-slider
+                                .swiper-wrapper
+                                    img(src="images/catalog/catalog-1.jpg", alt="Квартира").swiper-slide
+                                    img(src="images/catalog/catalog-2.jpg", alt="Квартира").swiper-slide
+                                    img(src="images/catalog/catalog-3.jpg", alt="Квартира").swiper-slide
+                                .swiper-pagination
+                            .catalog__item-title 1-к квартира, 50м
+                                sup 2
+                                |, 11/16 эт.
+                            .catalog__item-subtitle г. Москва, ул. Карла-Маркса, д 35А
+                            hr
+                            .catalog__price-wrapper
+                                .catalog__price 4 230 000 ₽
+                                .catalog__dollar-price $ 70 209
+                        a(href="#").catalog__item
+                            .catalog__img.swiper-container.catalog__img-slider
+                                .swiper-wrapper
+                                    img(src="images/catalog/catalog-2.jpg", alt="Квартира").swiper-slide
+                                    img(src="images/catalog/catalog-3.jpg", alt="Квартира").swiper-slide
+                                    img(src="images/catalog/catalog-1.jpg", alt="Квартира").swiper-slide
+                                .swiper-pagination
+                            .catalog__item-title 1-к квартира, 38м
+                                sup 2
+                                |, 3/16 эт.
+                            .catalog__item-subtitle г. Москва, ул. Карла-Маркса, д 35А
+                            hr
+                            .catalog__price-wrapper
+                                .catalog__price 7 360 000 ₽
+                                .catalog__dollar-price $ 70 209
+                        a(href="#").catalog__item
+                            .catalog__img.swiper-container.catalog__img-slider
+                                .swiper-wrapper
+                                    img(src="images/catalog/catalog-3.jpg", alt="Квартира").swiper-slide
+                                    img(src="images/catalog/catalog-2.jpg", alt="Квартира").swiper-slide
+                                    img(src="images/catalog/catalog-1.jpg", alt="Квартира").swiper-slide
+                                .swiper-pagination
+                            .catalog__item-title 1-к квартира, 50м
+                                sup 2
+                                |, 3/16 эт.
+                            .catalog__item-subtitle г. Москва, ул. Карла-Маркса, д 35А
+                            hr
+                            .catalog__price-wrapper
+                                .catalog__price 4 230 000 ₽
+                                .catalog__dollar-price $ 70 209
+                        
+                    .pagination
+                        ul.pagination__list
+                            li.pagination__item.pagination__prev
+                                a(href="#").pagination__link Предыдущая            
+                            .pagination__numbers
+                                li.pagination__item.active
+                                    a(href="#").pagination__link 1 
+                                li.pagination__item
+                                    a(href="#").pagination__link 2 
+                                li.pagination__item
+                                    a(href="#").pagination__link 3 
+                                li.pagination__item
+                                    a(href="#").pagination__link 4
+                                li.pagination__item
+                                    a(href="#").pagination__link 5
+                            li.pagination__item.pagination__next
+                                a(href="#").pagination__link Следующая            
