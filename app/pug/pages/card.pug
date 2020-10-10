@@ -1,0 +1,141 @@
+extends ../templates/page.pug
+
+block title
+    title 1-к квартира, 50м - Альянс Хаус
+
+block content
+    .container
+        .breadcrumbs
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a(href="index.html").breadcrumbs__link Главная
+                li.breadcrumbs__item
+                    a(href="card.html").breadcrumbs__link / Услуги
+                li.breadcrumbs__item
+                    a(href="card.html").breadcrumbs__link / Продажа квартир
+                li.breadcrumbs__item
+                    a(href="card.html").breadcrumbs__link / ул. Карла-Маркса, д. 35А
+    section.card
+        .container
+            .card__head
+                h1.card__title 1-к квартира, 50м
+                    sup 2
+                    | , 11/16 эт.
+                time(datetime="14-09-2020").card__date 14 сентября 2020 
+            .card__inner
+                .card__content
+                    .card__slider
+                        .card__thumbs.swiper-container
+                            .swiper-wrapper
+                                .card__item.swiper-slide
+                                    img(src="images/card/card-1.jpg", alt="Квартира")
+                                .card__item.swiper-slide
+                                    img(src="images/card/card-1.jpg", alt="Квартира")
+                                .card__item.swiper-slide
+                                    img(src="images/card/card-1.jpg", alt="Квартира")
+                                .card__item.swiper-slide
+                                    img(src="images/card/card-1.jpg", alt="Квартира")
+                        .card__big-slider.swiper-container
+                            .swiper-wrapper
+                                .card__item.swiper-slide
+                                    img(src="images/card/card-1.jpg", alt="Квартира")
+                                .card__item.swiper-slide
+                                    img(src="images/card/card-1.jpg", alt="Квартира")
+                                .card__item.swiper-slide
+                                    img(src="images/card/card-1.jpg", alt="Квартира")
+                                .card__item.swiper-slide
+                                    img(src="images/card/card-1.jpg", alt="Квартира")
+                    .card__item
+                        .card__item-title Описание
+                        .card__item-content
+                            .card__item-text
+                                p Продам 1-к квартиру в г. Москва, ул. Карла-Маркса, д 35А. В квартире выполнен косметический ремонт: пластиковые стеклопакеты, натяжные потолки, ламинат, ванная комната в кафеле, установлены счетчики на воду. У дома свое ТСЖ. В подарок новым жильцам остается кухонный гарнитур и шкаф.
+                    .card__item
+                        .card__item-title Характеристики
+                        .card__item-content
+                            dl.card__descr
+                                .card__descr-item
+                                    dt Комнатность
+                                    dd 3
+                                .card__descr-item
+                                    dt Общая площадь
+                                    dd 77.7 м
+                                        sup 2
+                                .card__descr-item
+                                    dt Площадь кухни
+                                    dd 12 м
+                                        sup 2
+                                .card__descr-item
+                                    dt Коммунальные платежи
+                                    dd 1500-2000 ₽
+                                .card__descr-item
+                                    dt Высота потолков
+                                    dd 2.5 м
+                                .card__descr-item
+                                    dt Ремонт
+                                    dd Современный ремонт
+                                .card__descr-item
+                                    dt Санузел
+                                    dd Объединенный
+                                .card__descr-item
+                                    dt Балкон
+                                    dd Лоджия
+                                .card__descr-item
+                                    dt Остекление балкона
+                                    dd Есть
+                                .card__descr-item
+                                    dt Площадь балкона
+                                    dd 4 м
+                                        sup 2
+                                .card__descr-item
+                                    dt Солнечная сторона
+                                    dd Часть окон
+                                .card__descr-item
+                                    dt Вид из окон
+                                    dd Во двор
+                                .card__descr-item
+                                    dt Счетчик воды
+                                    dd Есть
+                                .card__descr-item
+                                    dt Квартира угловая / торцевая
+                                    dd Да
+                                .card__descr-item
+                                    dt Кладовка
+                                    dd В квартире
+                                .card__descr-item
+                                    dt Железная дверь
+                                    dd Есть
+                                .card__descr-item
+                                    dt Подключённые сервисы
+                                    dd Телефон, интернет, кабельное телевидение
+                    .card__item
+                        .card__item-title Расположение
+                        .card__map
+                            iframe(src="https://snazzymaps.com/embed/266328" width="100%" height="390" style="border:none;")
+                aside.card__aside.aside
+                    .aside__price-wrapper
+                        span.aside__price 7 360 000 ₽
+                        span.aside__dollar-price $ 70 209
+                    a(href="#").aside__btn.btn Оставить заявку
+                    a(href="tel:8(931)5010220").aside__num.btn 8 (931) 501-02-20
+                    .aside__box.aside-box
+                        .aside-box__inner
+                            .aside-box__title Остались вопросы?
+                            .aside-box__head
+                                .aside-box__img
+                                    .aside-box__img-wrapper
+                                        img(src="images/card/manager.jpg", alt="Инна Ивлеева")
+                                .aside-box__head-text
+                                    .aside-box__title Инна Ивлеева
+                                    .aside-box__subtitle Менеджер по работе с клиентами, опыт 7 лет
+                            .aside-box__contacts
+                                a(href="tel:8(812)4459465").aside-box__link Тел: 
+                                    span 8 (812) 445-94-65
+                                a(href="https://api.whatsapp.com/send?phone=89315010220").aside-box__link Whats'up: 
+                                    span 8 931 501 0220
+                            .aside-box__lead
+                                .aside-box__lead-title Оставьте заявку
+                                .aside-box__lead-subtitle Перезваниваем через 15 минут
+                                form(action="#").aside-box__form
+                                    input(type="number", name="asideNumber", placeholder="+7 (921) 012 34-56")
+                        .aside__btn.aside-box__btn.btn Оставить заявку

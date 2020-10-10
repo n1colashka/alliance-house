@@ -56,7 +56,27 @@
         }
     }
 
-    
+    .card {
+        &__inner {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &__slider {
+            justify-content: center;
+        }
+
+        &__thumbs {
+            margin-right: 15px;
+        }
+
+        &__aside {
+            max-width: 600px;
+            width: auto;
+            margin-top: 60px;
+            margin-left: 0;
+        }
+    }
 }
 
 @media (max-width: 1169px) {
@@ -241,9 +261,60 @@
         }
     }
 
+    .card {
+        &__aside {
+            flex-shrink: 1;
+        }
+        &__slider {
+            max-width: 500px;
+            height: auto;
+        }
+
+        &__head {
+            margin-bottom: 50px;
+        }
+
+        &__title {
+            font-size: 36px;
+            line-height: 48px;
+        }
+
+        &__big-slider {
+            margin-left: 0;
+        }
+
+        &__thumbs {
+            display: none;
+        }
+    }
+    
 }
 
 @media (max-width: 768px) {
+
+    .card {
+        padding-bottom: 70px;
+
+        &__slider {
+            margin: 0 auto;
+        }
+        
+        &__descr-item {
+            flex-direction: column;
+            margin-bottom: 20px;
+
+            dd {
+                flex-basis: auto;
+                margin-top: 10px;
+            }
+        }
+
+        &__item-title {
+            font-size: 26px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+    }
 
     .services {
         &__item {
@@ -758,6 +829,12 @@
 }
 
 @media (max-width: 550px) {
+    .card {
+        &__slider {
+            max-width: 400px;
+        }
+    }
+
     .header {
         &__btn {
             margin: 0 auto;
@@ -787,6 +864,12 @@
 }
 
 @media (max-width: 450px) {
+    .card {
+        &__slider {
+            max-width: 350px;
+        }
+    }
+
     .main-slider {
 
         &__form-area {
@@ -800,10 +883,17 @@
         .custom-select {
             width: 80%;
         }
+        
     }
 }
 
 @media (max-width: 400px) {
+    .card {
+        &__slider {
+            max-width: 280px;
+        }
+    }
+    
     .header {
 
         &__links {

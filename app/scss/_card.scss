@@ -1,0 +1,253 @@
+.card {
+    padding-bottom: 120px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__title {
+        @include title;
+        margin-bottom: 35px;
+    }
+
+    &__date {
+        @include font('sf-light');
+        display: block;
+        background: url('../images/icons/calendar.png') left center no-repeat;
+        padding-left: 30px;
+        font-size: 18px;
+        color: #888888;
+    }
+
+    &__slider {
+        display: flex;
+        height: 440px;
+        margin-bottom: 50px;
+    }
+
+    &__slider-wrapper {
+        max-width: 670px;
+    }
+
+    &__big-slider {
+        max-width: 670px;
+        margin-left: 20px;
+    }
+
+    &__thumbs {
+        width: 130px;
+
+        .card__item {
+            height: 100px;
+            cursor: pointer;
+            img {
+                height: 100%;
+            }
+        }
+    }
+
+    &__aside {
+        width: 300px;
+        margin-left: 35px;
+    }
+
+    &__descr-item {
+        display: flex;
+        justify-content: space-between;
+        font-size: 18px;
+        margin-bottom: 16px;
+
+        @include font('sf-light');
+
+        dt {
+            color: #888888;
+        }
+        
+        dd {
+            color: #000000;
+            flex-basis: 50%;
+        }
+    }
+
+    &__item {
+        color: #000000;
+    }
+
+    &__item-content {
+        padding-bottom: 40px;
+        border-bottom: 1px solid #dddddd;
+    }
+
+    &__item-text {
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    &__item-title {
+        @include font('sf-semibold');
+        font-size: 30px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+}
+
+.aside {
+    padding-top: 30px;
+    flex-shrink: 0;
+    
+    &__price-wrapper {
+        display: flex;
+        margin-bottom: 25px;
+    }
+    
+    &__dollar-price {
+        @include font('sf-light');
+        font-size: 28px;
+        color: #b5b5b6;
+        margin-left: 23px;
+    }
+    
+    &__price {
+        @include font('oswald-semibold');
+        font-size: 30px;
+        color: #000000;
+    }
+    
+    .btn {
+        width: 100%;
+    }
+
+    &__btn {
+        margin-bottom: 15px;
+    }
+
+    &__num {
+        background-color: #ffffff;
+        color: #000000;
+        border: 2px solid $accent;
+        margin-bottom: 40px;
+    }
+}
+
+.aside-box {
+    
+    box-shadow: 1.216px 6.894px 21px 0px rgba(0, 0, 0, 0.15);
+    border: 1px solid #e8e8e8;
+    color: #262626;
+
+    &__inner {
+        padding: 25px;
+        padding-bottom: 0;
+    }
+
+    &__title {
+        @include font('sf-medium');
+        font-size: 22px;
+        margin-bottom: 10px;
+        color: #262626;
+    }
+
+    &__head {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include font('sf-light');
+        margin-bottom: 25px;
+    }
+
+    &__img {
+        flex-shrink: 0;
+        margin-right: 15px;
+    }
+
+    &__img-wrapper {
+        display: inline-block;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: 11px;
+            height: 11px;
+            border-radius: 5px;
+            border: 2px solid #ffffff;
+            background-color: #68ca3f;
+            right: 10px;
+            bottom: 4px;
+        }
+        img {
+            display: block;
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+            object-fit: cover;
+        }
+    }
+
+    &__subtitle {
+        color: #979797;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: -0.1px;
+    }
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        background-color: #f6f6f6;
+        margin: 0 -25px;
+        margin-bottom: 25px;
+        padding: 15px 25px;
+    }
+
+    &__link {
+        font-size: 18px;
+        margin-bottom: 12px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        span {
+            @include font('sf-medium');
+        }
+    }
+
+    &__lead-title {
+        @include font('sf-medium');
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    &__lead-subtitle {
+        @include font('sf-light');
+        color: #979797;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    &__form {
+        input {
+            font-size: 14px;
+            color: #979797;
+            background-color: #f6f6f6;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: none;
+
+        }
+    }
+
+    &__btn {
+        margin-bottom: 0;
+    }
+}

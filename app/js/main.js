@@ -157,4 +157,22 @@ $(function() {
         }
     });
 
+    var cardThumbs = new Swiper('.card__thumbs', {
+        direction: 'vertical',
+        slidesPerView: 4,
+        spaceBetween: 12,
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+    });
+    var cardSlider = new Swiper('.card__big-slider', {
+        navigation: {
+        nextEl: '.slider-next',
+        prevEl: '.slider-prev',
+        },
+        thumbs: {
+        swiper: cardThumbs
+        }
+    });
+
 });

@@ -87,11 +87,13 @@ input::-webkit-inner-spin-button {
 }
 
 .btn {
+    display: inline-block;
     @include font('sf-medium');
     font-size: 20px;
     padding: 20px 30px;
     border: none;
     background-color: $accent;
+    text-align: center;
     color: #ffffff;
     transition: .3s ease;
     cursor: pointer;
@@ -108,6 +110,7 @@ input::-webkit-inner-spin-button {
     &__list {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
         @include font('sf-light');
         font-size: 14px;
         color: #3b3b3b;
