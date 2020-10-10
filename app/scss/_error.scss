@@ -19,7 +19,7 @@
     }
 
     &__text {
-        @include font('sf-light');
+        @include font('sf-thin');
         font-size: 22px;
         line-height: 22px;
         color: #ffffff;

@@ -1,0 +1,159 @@
+extends ../templates/page.pug
+
+block title
+    title О компании - Альянс Хаус
+
+block content
+    .container
+        .breadcrumbs
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a(href="index.html").breadcrumbs__link Главная
+                li.breadcrumbs__item
+                    a(href="contacts.html").breadcrumbs__link / О компании
+
+    section.about-head
+        .about-head__wrapper
+            .container
+                .about-head__inner
+                    h1.about-head__title.title О нашем агенстве
+                    .about-head__text
+                        p Аренда недвижимости: жилая, загородная, коммерческая, Другие услуги: дизайн интерьера, консультации, нотариат, ремонт, страхование, строительство, управление объектами, Ипотечное кредитование: ипотека, рефинансирование, Продажа недвижимости: жилая, загородная, коммерческая
+                    .about-head__items
+                        .about-head__item
+                            .about-head__num >1 450
+                            .about-head__item-title партнёров среди застройщиков
+                        .about-head__item
+                            .about-head__num >10 400
+                            .about-head__item-title профессиональных сотрудников
+                        .about-head__item
+                            .about-head__num >960
+                            .about-head__item-title объектов каждый день
+        .container
+            .about-head__images
+                img(src="images/about/about-head-1.jpg", alt="Интерьер")
+                img(src="images/about/about-head-2.jpg", alt="Интерьер")
+
+    section.why
+        .container
+            .why__inner
+                h3.why__title.title.title--white Почему стоит работать с нами
+                ul.why__list
+                    li.why__item
+                        a.why__link(href="#")
+                            img(src="images/icons/apartment.png", alt="Доступно")
+                            | Доступно
+                        .why__box
+                            .why__box-img
+                                img(src="images/icons/apartment-black.png", alt="Доступно")
+                            .why__box-title 1. Доступно
+                            .why__box-text
+                                p Возможность получить ипотеку без офиц. трудоустройства и первоначального взноса.
+                    li.why__item
+                        a.why__link(href="#")
+                            img(src="images/icons/house.png", alt="Большой выбор")
+                            | Большой выбор
+                            .why__box
+                                .why__box-img
+                                    img(src="images/icons/apartment-black.png", alt="Доступно")
+                                .why__box-title 2. Большой выбор
+                                .why__box-text
+                                    p Возможность получить ипотеку без офиц. трудоустройства и первоначального взноса.
+                    li.why__item
+                        a.why__link(href="#")
+                            img(src="images/icons/security.png", alt="Безопасно")
+                            | Безопасно
+                            .why__box
+                                .why__box-img
+                                    img(src="images/icons/apartment-black.png", alt="Доступно")
+                                .why__box-title 3. Безопасно
+                                .why__box-text
+                                    p Возможность получить ипотеку без офиц. трудоустройства и первоначального взноса.
+                    li.why__item
+                        a.why__link(href="#")
+                            img(src="images/icons/user.png", alt="Качественно")
+                            | Качественно
+                            .why__box
+                                .why__box-img
+                                    img(src="images/icons/apartment-black.png", alt="Доступно")
+                                .why__box-title 4. Качественно
+                                .why__box-text
+                                    p Возможность получить ипотеку без офиц. трудоустройства и первоначального взноса.
+    section.team
+        .container
+            .team__inner
+                h3.team__title Команда с общими ценностями
+                .team__content
+                    .team__box
+                        img(src="images/team/team-1.jpg", alt="Ахмет Каримов").team__img
+                        .team__info
+                            .team__name Ахмет Каримов
+                            .team__post Руководитель
+                    .team__box
+                        img(src="images/team/team-2.jpg", alt="Ахмет Каримов").team__img
+                        .team__info
+                            .team__name Ахмет Каримов
+                            .team__post Руководитель
+                    .team__box.team__box--double
+                        .team__about 
+                            span 6
+                            | человек работает в нашем агентстве
+                    .team__box
+                        img(src="images/team/team-3.jpg", alt="Ахмет Каримов").team__img
+                        .team__info
+                            .team__name Ахмет Каримов
+                            .team__post Руководитель
+                    .team__box
+                        img(src="images/team/team-4.jpg", alt="Ахмет Каримов").team__img
+                        .team__info
+                            .team__name Ахмет Каримов
+                            .team__post Руководитель
+                    .team__box
+                        img(src="images/team/team-3.jpg", alt="Ахмет Каримов").team__img
+                        .team__info
+                            .team__name Ахмет Каримов
+                            .team__post Руководитель
+                    .team__box
+                        img(src="images/team/team-1.jpg", alt="Ахмет Каримов").team__img
+                        .team__info
+                            .team__name Ахмет Каримов
+                            .team__post Руководитель
+    section.about-works
+        .container
+            h4.about-works__title Наши работы
+            .about-works__main-slider
+                .about-works__main-slider-item
+                    .swiper-container.about-works__slider-top
+                        .swiper-wrapper
+                            .swiper-slide(style="background-image: url('images/works/works-2-full.jpg")
+                            .swiper-slide(style="background-image: url('images/works/works-1-full.jpg")
+                            .swiper-slide(style="background-image: url('images/works/works-3-full.jpg")
+                            .swiper-slide(style="background-image: url('images/works/works-1-full.jpg")
+                            .swiper-slide(style="background-image: url('images/works/works-2-full.jpg")
+                            .swiper-slide(style="background-image: url('images/works/works-2-full.jpg")
+                            .swiper-slide(style="background-image: url('images/works/works-1-full.jpg")
+                        .about-works__nav
+                            button.slider-prev
+                            button.slider-next
+                    .swiper-container.about-works__slider-thumbs
+                        .swiper-wrapper
+                                .swiper-slide(style="background-image: url('images/works/works-2-full.jpg")
+                                .swiper-slide(style="background-image: url('images/works/works-1-full.jpg")
+                                .swiper-slide(style="background-image: url('images/works/works-3-full.jpg")
+                                .swiper-slide(style="background-image: url('images/works/works-1-full.jpg")
+                                .swiper-slide(style="background-image: url('images/works/works-2-full.jpg")
+                                .swiper-slide(style="background-image: url('images/works/works-2-full.jpg")
+                                .swiper-slide(style="background-image: url('images/works/works-1-full.jpg")
+    section.extra
+        .container
+            .extra__inner
+                .extra__title Ещё немного информации
+                .extra__text
+                    p Наша компания не останавливается на достигнутом, продолжает развивать услуги и инновационные проекты. Опираясь на опыт и глубокий анализ рынка, компания всегда предлагает лучшее для клиентов и партнеров. С нами удовлетворенность от сделки с недвижимостью выше, что подтверждают отзывы.
+                .extra__list-title Наши преимущества:
+                ul.extra__list
+                    .extra__item экономия своего времени и денег
+                    .extra__item гарантия безопасности сделки
+                    .extra__item индивидуальные выгодные предложения от застройщиков и банков
+                    .extra__item прозрачное ценообразование и отсутствие скрытых платежей
+                    

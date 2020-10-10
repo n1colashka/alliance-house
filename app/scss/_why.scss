@@ -5,6 +5,10 @@
         url('../images/why/why-bg.jpg') center / cover no-repeat;
     padding-top: 130px;
     padding-bottom: 110px;
+
+    &__title {
+        max-width: 300px;
+    }
     
     &__item {
         max-width: 280px;

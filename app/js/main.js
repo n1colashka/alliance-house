@@ -138,4 +138,23 @@ $(function() {
             item.parentElement.classList.add('active');
         });
     });
+
+    // Works slider
+
+    var galleryThumbs = new Swiper('.about-works__slider-thumbs', {
+        slidesPerView: 6,
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+    });
+    var galleryTop = new Swiper('.about-works__slider-top', {
+        navigation: {
+        nextEl: '.slider-next',
+        prevEl: '.slider-prev',
+        },
+        thumbs: {
+        swiper: galleryThumbs
+        }
+    });
+
 });

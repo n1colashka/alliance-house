@@ -685,6 +685,54 @@
             font-size: 18px;
         }
     }
+
+    .about-head {
+        &__wrapper {
+            background-image: none;
+        }
+
+        &__item {
+            margin-bottom: 30px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        &__items {
+            justify-content: flex-start;
+        }
+
+        &__images {
+            margin-top: 50px;
+            justify-content: center;
+            max-width: 360px;
+            width: 100%;
+            margin: 0 auto;
+
+            img {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .about-works {
+        &__title {
+            font-size: 36px;
+            line-height: 48px;
+        }
+        
+        &__slider-thumbs {
+            display: none;
+        }
+
+        &__slider-top {
+            height: 400px;
+        }
+
+        &__extra {
+            padding: 60px 0;
+        }
+    }
 }
 
 @media (max-width: 599px) {
