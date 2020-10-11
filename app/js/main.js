@@ -187,6 +187,29 @@ $(function() {
         },
         pagination: false,
         arrows: false,
+        breakpoints: {
+            1640: {
+                gap: 130,
+                padding: {
+                    right: '250px',
+                    left : '250px',
+                },
+            },
+            
+            1440: {
+                gap: 50,
+                padding: {
+                    right: '150px',
+                    left : '150px',
+                },
+            },
+            
+            1000: {
+                gap: 0,
+                padding: 0,
+            },
+        },
+        
         }).mount();
 
 
