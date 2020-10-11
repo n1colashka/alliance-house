@@ -84,6 +84,7 @@
     &__slider-thumbs {
         height: 140px;
         width: 100%;
+        transition: .3s ease;
 
         .swiper-slide {
             width: 170px;
@@ -105,10 +106,37 @@
         right: 0;
         bottom: 0;
         z-index: 99;
+        transition: .3s ease;
     }
 
-}
+    &__main-slider {
+        width: 100%;
 
+        .is-active {
+            .about-works__slider-thumbs {
+                opacity: 1;
+            }
+
+            .about-works__nav {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__main-slider-item {
+        width: 1130px;
+
+        .about-works__slider-thumbs {
+            opacity: 0;
+        }
+        .about-works__nav {
+            opacity: 0;
+        }
+    }
+
+    
+}
+    
 .extra {
     padding: 115px 0;
 

@@ -139,21 +139,21 @@ $(function() {
 
     // Works slider
 
-    var galleryThumbs = new Swiper('.about-works__slider-thumbs', {
-        slidesPerView: 6,
-        freeMode: true,
-        watchSlidesVisibility: true,
-        watchSlidesProgress: true,
-    });
-    var galleryTop = new Swiper('.about-works__slider-top', {
-        navigation: {
-        nextEl: '.slider-next',
-        prevEl: '.slider-prev',
-        },
-        thumbs: {
-        swiper: galleryThumbs
-        }
-    });
+    // var galleryThumbs = new Swiper('.about-works__slider-thumbs', {
+    //     slidesPerView: 6,
+    //     freeMode: true,
+    //     watchSlidesVisibility: true,
+    //     watchSlidesProgress: true,
+    // });
+    // var galleryTop = new Swiper('.about-works__slider-top', {
+    //     navigation: {
+    //     nextEl: '.slider-next',
+    //     prevEl: '.slider-prev',
+    //     },
+    //     thumbs: {
+    //     swiper: galleryThumbs
+    //     }
+    // });
 
     var cardThumbs = new Swiper('.card__thumbs', {
         direction: 'vertical',
@@ -173,6 +173,70 @@ $(function() {
         },
         thumbs: {
         swiper: cardThumbs
+        }
+    });
+
+    //about
+
+    new Splide( '#splide', {
+        start: 1,
+        gap: 230,
+        padding: {
+            right: '390px',
+            left : '390px',
+        },
+        pagination: false,
+        arrows: false,
+        }).mount();
+
+
+    var aboutThumbs = new Swiper('.slider-thumbs--1', {
+        slidesPerView: 6,
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+    });
+    var aboutSlider = new Swiper('.slider-top--1', {
+        navigation: {
+        nextEl: '.slider-next',
+        prevEl: '.slider-prev',
+        },
+        thumbs: {
+        swiper: aboutThumbs
+        }
+    });
+
+
+    var aboutThumbs2 = new Swiper('.slider-thumbs--2', {
+        slidesPerView: 6,
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+    });
+    var aboutSlider2 = new Swiper('.slider-top--2', {
+        navigation: {
+        nextEl: '.slider-next',
+        prevEl: '.slider-prev',
+        },
+        thumbs: {
+        swiper: aboutThumbs2
+        }
+    });
+
+
+    var aboutThumbs3 = new Swiper('.slider-thumbs--3', {
+        slidesPerView: 6,
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+    });
+    var aboutSlider3 = new Swiper('.slider-top--3', {
+        navigation: {
+        nextEl: '.slider-next',
+        prevEl: '.slider-prev',
+        },
+        thumbs: {
+        swiper: aboutThumbs3
         }
     });
 
