@@ -6,7 +6,7 @@ const vendorsScripts = [
     'node_modules/jquery/dist/jquery.min.js',
     'node_modules/swiper/swiper-bundle.min.js',
     'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js',
-    // 'node_modules/shufflejs/dist/shuffle.min.js'
+    'node_modules/@splidejs/splide/dist/js/splide.min.js'
 ];
 
 module.exports = function vendors(cb) {
